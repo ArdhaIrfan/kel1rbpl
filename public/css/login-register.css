@@ -1,0 +1,18 @@
+.card-header{
+    color: white;
+    background-color: #343434;
+}
+
+.card-body{
+    color: white;
+    background-color: #1E1E1E;
+}
+
+.btn-yellow{
+    color: #000000;
+    background-color: #FBAD1C;
+}
+
+.txt-yellow{
+    color: #FBAD1C;
+}
