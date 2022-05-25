@@ -15,12 +15,18 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app-layout.css') }}" rel="stylesheet">
+
+    @yield('local_css')
+
 </head>
-<body style="background-color: #121417">
+<body style="background-color: #121417; color: white;">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-black-transparent shadow-sm">
             <div class="container">
