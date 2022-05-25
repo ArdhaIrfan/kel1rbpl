@@ -1,0 +1,33 @@
+.bg-black-transparent{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link-white{
+    color: #FFFFFF !important;
+    font-weight: 600;
+}
+
+.nav-link-white:hover{
+    color: #FBAD1C !important;
+    font-weight: 600;
+}
+
+.link-white{
+    color: #FFFFFF !important;
+}
+
+.link-white:hover{
+    color: #FBAD1C !important;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.bg-black{
+    background-color: #000000;
+}
