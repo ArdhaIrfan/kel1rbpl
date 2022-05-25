@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/list-modul', 'Modul\ListController@tampilkan');
 Route::get('/riwayat-modul', 'Modul\RiwayatController@tampilkan');
 Route::get('/video-modul', 'Modul\VideoController@tampilkan');
+
+// by Arif
+Route::get('/landing', 'LandingPageController@tampilkan');

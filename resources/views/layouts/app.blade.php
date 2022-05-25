@@ -15,16 +15,24 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app-layout.css') }}" rel="stylesheet">
+
+    @yield('local_css')
+
 </head>
-<body>
+<body style="background-color: #121417; color: white;">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black-transparent shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{-- {{ config('app.name', 'Laravel') }} --}}
+                    <img src="{{ asset('images/logo-ide-navbar.png') }}" alt="IlmuDewantara" height="40" >
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -38,24 +46,36 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white" href="/">{{ __('HOME') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white" href="/">{{ __('MODUL') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white" href="/">{{ __('ARTIKEL') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white" href="/">{{ __('SUBSCRIPTION') }}</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link nav-link-white" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link nav-link-white" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link nav-link-white dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item nav-link-white" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -75,6 +95,60 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        {{-- <div class="bg-black containter-fluid">
+            <div id="footer" class="footer container row">
+                <div class="col-md-3">
+                    <h5>
+                        Leave a Message:
+                    </h5>
+                    <form action="" method="post">
+                        <div>
+                            <textarea name="footer-message" id="footer-message" cols="30" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        IlmuDewantara
+                    </h5>
+                    <ul class="no-bullets">
+                        <li>
+                            <a class="link-white" href="">Modules</a>
+                        </li>
+                        <li>
+                            <a class="link-white" href="">IDe-Watch</a>
+                        </li>
+                        <li>
+                            <a class="link-white" href="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Contact Us
+                    </h5>
+                    <ul class="no-bullets">
+                        <li>
+                            + 62 (877) 8876-3027
+                        </li>
+                        <li>
+                            + 60 (105) 530-735
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Connect with Us
+                    </h5>
+                </div>
+            </div>
+        </div> --}}
+
     </div>
+
 </body>
 </html>
