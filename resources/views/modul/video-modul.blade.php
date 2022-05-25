@@ -43,6 +43,7 @@
                 width: 95%;
             }
         }
+
     </style>
 </head>
 
@@ -81,28 +82,34 @@
             <div>
                 <img src="../../../public/images/kitten.jpg" alt="banner" class="my-3 img-fluid banner">
             </div> -->
-            <div class="column">
+            <div class="column mt-4">
                 <div class="row justify-content-between">
                     <div class="column col-8">
                         <div class="row">
-                            <div class="col-2">
-                                <p>25 Menit</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Bintang</p>
-                            </div>
-                            <div class="col-4">
-                                <p>Tim</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Share</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Save</p>
+                            <div class="row col-12 mb-2">
+                                <div class="col-2">
+                                    <p>25 Menit</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Bintang</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>Tim</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Share</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>Save</p>
+                                </div>
                             </div>
                             <div class="col-12">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quasi ut, perspiciatis provident aperiam totam in id minus delectus accusantium assumenda tenetur neque esse veritatis eius! Quae id natus perspiciatis.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid doloremque quaerat modi quasi qui voluptate beatae nisi veniam possimus! Ipsa eum et repudiandae dolorum consequatur pariatur? Fuga, magnam molestias.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quasi ut,
+                                    perspiciatis provident aperiam totam in id minus delectus accusantium assumenda
+                                    tenetur neque esse veritatis eius! Quae id natus perspiciatis.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid doloremque
+                                    quaerat modi quasi qui voluptate beatae nisi veniam possimus! Ipsa eum et
+                                    repudiandae dolorum consequatur pariatur? Fuga, magnam molestias.</p>
                             </div>
                         </div>
                         <div>
@@ -121,7 +128,10 @@
                 <div class="row justify-content-between">
                     <div class="column col-8">
                         <div class="col-12 my-4">
-                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/pWjt2HI9uxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/pWjt2HI9uxU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="column col-3 my-4">
@@ -140,55 +150,61 @@
             </div>
             <div class="row justify-content-between mt-5">
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
                             the card's content.</p>
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
                             the card's content.</p>
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
                             the card's content.</p>
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
                             the card's content.</p>
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
                             the card's content.</p>
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
                             the card's content.</p>
                         <a href="#" class="stretched-link"></a>
                     </div>
@@ -199,8 +215,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

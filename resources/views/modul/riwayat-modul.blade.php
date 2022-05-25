@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Video Modul</title>
+    <title>Riwayat Modul</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
@@ -25,9 +25,11 @@
         .card img {
             overflow: hidden;
             object-fit: cover;
+            min-height: 100%;
+            min-width: 100%;
         }
 
-        .card {
+        /* .card {
             width: 31%;
             height: 270px;
         }
@@ -42,15 +44,15 @@
             .card {
                 width: 95%;
             }
-        }
+        } */
     </style>
 </head>
 
 <body class="text-light">
     <div class="container col-11 col-md-10 py-5">
         <div class="column">
-            <div class="text-center py-5">
-                <h1>Modul Mahir</h1>
+            <div class="mb-5">
+                <h1>Riwayat Modul</h1>
                 <!-- <h6>Tempatmu belajar dan menjadi tak terduga!</h6> -->
             </div>
             <!-- <div class="my-4 pt-2">
@@ -66,11 +68,13 @@
                         <button type="button" class="btn btn-secondary col-11">Lomba</button>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex col-12">
+            </div> -->
+            <div class="d-flex col-12 text-center">
                 <div class="d-flex col-md-7">
-                    <a href="#" class="col-md-3 text-warning">Semua Modul</a>
-                    <a href="#" class="col-md-3 text-light">Live Session</a>
+                    <a href="#" class="col-md-2 text-warning">Modul</a>
+                    <a href="#" class="col-md-2 text-light">IDe-Watch</a>
+                    <a href="#" class="col-md-2 text-light">Blog</a>
+                    <a href="#" class="col-md-3 text-light">Discussion</a>
                 </div>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search Community"
@@ -78,67 +82,87 @@
                     <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
                 </div>
             </div>
-            <div>
+            <div class="my-5">
+                <div class="card mb-3 border-0 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{url('images/kitten2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-dark bg-gradient text-light" style="height: 100%;">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 border-0 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{url('images/kitten2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-dark bg-gradient text-light" style="height: 100%;">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 border-0 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{url('images/kitten2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-dark bg-gradient text-light" style="height: 100%;">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 border-0 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{url('images/kitten2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-dark bg-gradient text-light" style="height: 100%;">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 border-0 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{url('images/kitten2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-dark bg-gradient text-light" style="height: 100%;">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
                 <img src="../../../public/images/kitten.jpg" alt="banner" class="my-3 img-fluid banner">
             </div> -->
-            <div class="column">
-                <div class="row justify-content-between">
-                    <div class="column col-8">
-                        <div class="row">
-                            <div class="col-2">
-                                <p>25 Menit</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Bintang</p>
-                            </div>
-                            <div class="col-4">
-                                <p>Tim</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Share</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Save</p>
-                            </div>
-                            <div class="col-12">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quasi ut, perspiciatis provident aperiam totam in id minus delectus accusantium assumenda tenetur neque esse veritatis eius! Quae id natus perspiciatis.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid doloremque quaerat modi quasi qui voluptate beatae nisi veniam possimus! Ipsa eum et repudiandae dolorum consequatur pariatur? Fuga, magnam molestias.</p>
-                            </div>
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <h5>Requirements</h5>
-                        <ul>
-                            <li>
-                                Memiliki kemauan untuk belajar hal-hal baru.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row justify-content-between">
-                    <div class="column col-8">
-                        <div class="col-12 my-4">
-                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/pWjt2HI9uxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="column col-3 my-4">
-                        <h5 class="mb-3">Konten Modul</h5>
-                        <div class="col-12">
-                            Materi 1
-                        </div>
-                        <div class="col-12">
-                            Materi 2
-                        </div>
-                        <div class="col-12">
-                            Materi 3
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-between mt-5">
+            <!-- <div class="row justify-content-between mt-5">
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                     <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
@@ -193,7 +217,7 @@
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 

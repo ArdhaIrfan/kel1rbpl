@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//ModulController by Ardha
+Route::get('/list-modul', 'Modul\ListController@tampilkan');
+Route::get('/riwayat-modul', 'Modul\RiwayatController@tampilkan');
+Route::get('/video-modul', 'Modul\VideoController@tampilkan');

@@ -4,14 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Video Modul</title>
+    <title>List Modul</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
+    {{-- Font --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
     <style>
         body {
             background-color: rgb(22, 22, 22);
+            font-family: 'Ubuntu', sans-serif;
         }
 
         .banner {
@@ -49,11 +62,11 @@
 <body class="text-light">
     <div class="container col-11 col-md-10 py-5">
         <div class="column">
-            <div class="text-center py-5">
-                <h1>Modul Mahir</h1>
-                <!-- <h6>Tempatmu belajar dan menjadi tak terduga!</h6> -->
+            <div class="pb-3">
+                <h1 style="font-weight: 500;">Modul Mahir</h1>
+                <h6>Tempatmu belajar dan menjadi tak terduga!</h6>
             </div>
-            <!-- <div class="my-4 pt-2">
+            <div class="my-4 pt-2">
                 <h5>Kategori</h5>
                 <div class="d-flex text-center pt-2">
                     <div class="col-4">
@@ -79,68 +92,11 @@
                 </div>
             </div>
             <div>
-                <img src="../../../public/images/kitten.jpg" alt="banner" class="my-3 img-fluid banner">
-            </div> -->
-            <div class="column">
-                <div class="row justify-content-between">
-                    <div class="column col-8">
-                        <div class="row">
-                            <div class="col-2">
-                                <p>25 Menit</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Bintang</p>
-                            </div>
-                            <div class="col-4">
-                                <p>Tim</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Share</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Save</p>
-                            </div>
-                            <div class="col-12">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quasi ut, perspiciatis provident aperiam totam in id minus delectus accusantium assumenda tenetur neque esse veritatis eius! Quae id natus perspiciatis.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid doloremque quaerat modi quasi qui voluptate beatae nisi veniam possimus! Ipsa eum et repudiandae dolorum consequatur pariatur? Fuga, magnam molestias.</p>
-                            </div>
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <h5>Requirements</h5>
-                        <ul>
-                            <li>
-                                Memiliki kemauan untuk belajar hal-hal baru.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row justify-content-between">
-                    <div class="column col-8">
-                        <div class="col-12 my-4">
-                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/pWjt2HI9uxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="column col-3 my-4">
-                        <h5 class="mb-3">Konten Modul</h5>
-                        <div class="col-12">
-                            Materi 1
-                        </div>
-                        <div class="col-12">
-                            Materi 2
-                        </div>
-                        <div class="col-12">
-                            Materi 3
-                        </div>
-                    </div>
-                </div>
+                <img src="{{url('images/kitten.jpg')}}" alt="banner" class="my-3 img-fluid banner">
             </div>
             <div class="row justify-content-between mt-5">
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{url('images/kitten2.jpg')}}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -149,7 +105,7 @@
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{url('images/kitten2.jpg')}}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -158,7 +114,7 @@
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{url('images/kitten2.jpg')}}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -167,7 +123,7 @@
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{url('images/kitten2.jpg')}}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -176,7 +132,7 @@
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{url('images/kitten2.jpg')}}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -185,7 +141,7 @@
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{url('images/kitten2.jpg')}}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
