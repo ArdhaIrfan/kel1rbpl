@@ -26,3 +26,7 @@ Route::get('/video-modul', 'Modul\VideoController@tampilkan');
 
 // by Arif
 Route::get('/landing', 'LandingPageController@tampilkan');
+
+Route::get('/modul/upload', 'Modul\UploadController@upload');
+Route::post('/modul/upload/proses', 'Modul\UploadController@proses_upload');
+Route::get('/upload/hapus/{id}', 'Modul\UploadController@hapus');
