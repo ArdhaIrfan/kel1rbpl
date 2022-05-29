@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Laravel #30 : Membuat Upload File Dengan Laravel</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+@extends('layouts.app')
 
-</head>
+@section('title')
+<title>Upload Modul</title>
+@endsection
+@section('local_css')
+    <style>
+        body {
+            background-color: rgb(22, 22, 22);
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .banner {
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+            object-fit: cover;
+            /* object-position: top; */
+        }
+
+        .card img {
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .card {
+            width: 31%;
+            height: 270px;
+        }
+
+        @media (max-width: 991px) {
+            .card {
+                width: 47%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .card {
+                width: 95%;
+            }
+        }
+    </style>
+@endsection
+@section('content')
 <body>
 	<div class="row">
 		<div class="container">
@@ -46,7 +83,7 @@
 
 				<h4 class="my-5">Data</h4>
 
-				<table class="table table-bordered table-striped">
+				<table class="table table-bordered table-striped text-secondary">
 					<thead>
 						<tr>
 							<th width="1%">Judul</th>
@@ -58,10 +95,10 @@
 					<tbody>
 						@foreach($modul as $m)
 						<tr>
-							<td>{{$m->title}}</td>
-                            <td>{{$m->deskripsi}}</td>
-                            <td><img width="150px" src="{{ url('/gambar_modul/'.$m->gambar) }}"></td>
-							<td><a class="btn btn-danger" href="/upload/hapus/{{ $m->modulid }}">HAPUS</a></td>
+							<td class="text-secondary">{{$m->title}}</td>
+                            <td class="text-secondary">{{$m->deskripsi}}</td>
+                            <td class="text-secondary"><img width="150px" src="{{ url('/gambar_modul/'.$m->gambar) }}"></td>
+							<td class="text-secondary"><a class="btn btn-danger" href="/upload/hapus/{{ $m->modulid }}">HAPUS</a></td>
 						</tr>
 						@endforeach
 					</tbody>
@@ -70,4 +107,4 @@
 		</div>
 	</div>
 </body>
-</html>
+@endsection

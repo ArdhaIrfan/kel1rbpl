@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Video Modul</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-
+@section('title')
+<title>Video Modul</title>
+@endsection
+@section('local_css')
     <style>
         body {
             background-color: rgb(22, 22, 22);
@@ -43,10 +38,9 @@
                 width: 95%;
             }
         }
-
     </style>
-</head>
-
+@endsection
+@section('content')
 <body class="text-light">
     <div class="container col-11 col-md-10 py-5">
         <div class="column">
@@ -218,5 +212,4 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 </body>
-
-</html>
+@endsection

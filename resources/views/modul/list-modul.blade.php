@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title')
+<title>Modul Mahir</title>
+@endsection
 @section('local_css')
     <style>
         body {
@@ -74,7 +77,7 @@
                 <img src="{{url('images/kitten.jpg')}}" alt="banner" class="my-3 img-fluid banner">
             </div>
 
-            <div class="row justify-content-between mt-5">
+            <div class="row mt-5">
                 @foreach ($modul as $m)
                     <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                         <img src="{{url('gambar_modul/'.$m->gambar)}}" class="card-img-top mx-0" alt="modul card">

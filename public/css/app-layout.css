@@ -31,3 +31,15 @@ ul.no-bullets {
 .bg-black{
     background-color: #000000;
 }
+
+.filter-riwayat a {
+    text-decoration: none;
+}
+
+.filter-riwayat a:hover {
+    color: #FBAD1C !important;
+}
+
+.filter-riwayat a:active {
+    color: #FBAD1C !important;
+}
