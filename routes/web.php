@@ -20,9 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //ModulController by Ardha
-Route::get('/list-modul', 'Modul\ListController@tampilkan');
-Route::get('/riwayat-modul', 'Modul\RiwayatController@tampilkan');
-Route::get('/video-modul', 'Modul\VideoController@tampilkan');
+Route::get('/modul/list', 'Modul\ListController@tampilkan');
+Route::get('/modul/riwayat', 'Modul\RiwayatController@tampilkan');
+Route::get('/modul/video', 'Modul\VideoController@tampilkan');
 
 // by Arif
 Route::get('/landing', 'LandingPageController@tampilkan');
@@ -30,3 +30,5 @@ Route::get('/landing', 'LandingPageController@tampilkan');
 Route::get('/modul/upload', 'Modul\UploadController@upload');
 Route::post('/modul/upload/proses', 'Modul\UploadController@proses_upload');
 Route::get('/upload/hapus/{id}', 'Modul\UploadController@hapus');
+
+Route::get('/modul/riwayat/temp', 'Modul\RiwayatController@tampilkan_temp');
