@@ -3,6 +3,11 @@
 @section('title')
 <title>Riwayat Modul</title>
 @endsection
+
+@section('nav-modul')
+nav-active
+@endsection
+
 @section('local_css')
 <style>
     body {

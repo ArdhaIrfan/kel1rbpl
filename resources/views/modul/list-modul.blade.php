@@ -3,6 +3,11 @@
 @section('title')
 <title>Modul Mahir</title>
 @endsection
+
+@section('nav-modul')
+nav-active
+@endsection
+
 @section('local_css')
     <style>
         body {
@@ -64,8 +69,8 @@
             </div>
             <div class="d-flex col-12">
                 <div class="d-flex col-md-7">
-                    <a href="#" class="col-md-3 text-warning">Semua Modul</a>
-                    <a href="#" class="col-md-3 text-light">Live Session</a>
+                    <a href="#" class="col-md-3 text-warning standard-link">Semua Modul</a>
+                    <a href="#" class="col-md-3 text-light standard-link">Live Session</a>
                 </div>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search Community"
