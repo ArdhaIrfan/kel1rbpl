@@ -3,6 +3,11 @@
 @section('title')
 <title>Video Modul</title>
 @endsection
+
+@section('nav-modul')
+nav-active
+@endsection
+
 @section('local_css')
     <style>
         body {
@@ -91,10 +96,10 @@
                                     <p>Tim</p>
                                 </div>
                                 <div class="col-2">
-                                    <p>Share</p>
+                                    <a href="" class="standard-link text-light">Share</a>
                                 </div>
                                 <div class="col-2">
-                                    <p>Save</p>
+                                    <a href="" class="standard-link text-light">Save</a>
                                 </div>
                             </div>
                             <div class="col-12">

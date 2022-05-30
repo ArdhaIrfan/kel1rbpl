@@ -34,7 +34,7 @@
 </head>
 
 <body style="background-color: #121417; color: white;">
-    <div id="app">
+    <div id="app" class="head-background">
         <nav class="navbar navbar-expand-md navbar-dark bg-black-transparent shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -51,16 +51,16 @@
                     <div class="">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link nav-link-white" href="/">{{ __('HOME') }}</a>
+                                <a class="nav-link nav-link-white @yield('nav-home')" href="/landing">{{ __('HOME') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-white" href="/modul/list">{{ __('MODUL') }}</a>
+                                <a class="nav-link nav-link-white @yield('nav-modul')" href="/modul/list">{{ __('MODUL') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-white" href="/">{{ __('ARTIKEL') }}</a>
+                                <a class="nav-link nav-link-white @yield('nav-artikel')" href="/">{{ __('ARTIKEL') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-white" href="/">{{ __('SUBSCRIPTION') }}</a>
+                                <a class="nav-link nav-link-white @yield('nav-subscription')" href="/">{{ __('SUBSCRIPTION') }}</a>
                             </li>
                             <!-- Authentication Links -->
                             @guest

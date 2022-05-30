@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('title')
+<title>Ilmu Dewantara</title>
+@endsection
+
+@section('nav-home')
+nav-active
+@endsection
+
 @section('local_css')
     <style>
         .banner {
@@ -44,8 +52,8 @@
 
 @section('content')
     <div class="pt-5 pb-5" style="background-image: url('../../../public/images/login-register-bg.png');">
-        <div id="landing-welcome" class="container row">
-            <div class="col-md-5 ml-auto">
+        <div id="landing-welcome" class="container row mx-auto">
+            <div class="col-md-6">
                 <h1 class="py-3"> Manfaatkan Potensi <span class="text-warning"> Dirimu!</span> </h1>
                 <p class="caption">
                     Temukan rahasia sukses perkuliahanmu di bidang nonakademik dengan mudah
@@ -57,20 +65,18 @@
             </div>
 
 
-            <div class="col-md-6 text-center mt-5">
+            <div class="col-md-5 text-center mt-5 mx-auto">
 
-                <img class="" src="{{url('images/kitten.jpg')}}" height="200" />
+                <img class="" src="{{url('images/kitten.jpg')}}" style="height: 200; width: 100%; overflow: hidden; object-fit: cover;">
 
             </div>
         </div>
     </div>
 
 
-    <div id="landing-overview" class="container row mt-5 ml-auto mr-5">
-        <div class="col-md-6 text-center mt-5">
-
-            <img class="" src="{{url('images/kitten.jpg')}}" height="200" />
-
+    <div id="landing-overview" class="container row mt-5 ml-auto mx-auto">
+        <div class="col-md-6 text-center mt-5 my-auto py-auto">
+            <img class="" src="{{url('images/kitten.jpg')}}" style="height: 100%; width: 100%; overflow: hidden; object-fit: cover;">
         </div>
 
         <div class="col-md-6">
@@ -109,10 +115,10 @@
         <div class="mb-5">
 
             &nbsp;
-            <h1 class="">Module
-                <span class="text-warning">MAHIR</span>
+            <h2 class="">Module
+                <span class="text-primary">MAHIR</span>
                 dari IlmuDewantara
-            </h1>
+            </h2>
 
             <p class="">
                 Video dan materi tertulis yang kami sediakan dikurasi oleh orang-orang yang berpengalaman di bidangnya.

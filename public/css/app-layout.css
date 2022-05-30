@@ -32,14 +32,23 @@ ul.no-bullets {
     background-color: #000000;
 }
 
-.filter-riwayat a {
+.standard-link {
     text-decoration: none;
 }
 
-.filter-riwayat a:hover {
+.standard-link:hover {
     color: #FBAD1C !important;
 }
 
-.filter-riwayat a:active {
+.standard-link:active {
     color: #FBAD1C !important;
+}
+
+.nav-active {
+    color: #FBAD1C !important;
+}
+
+.head-background {
+    background-image: url("/images/back-ide.png");
+    height: 70vh;
 }
