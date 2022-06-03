@@ -1,17 +1,22 @@
 @extends('layouts.login-register-layout')
 
+@section('nav-login')
+nav-active
+@endsection
+
 @section('content')
+<div class="auth-content py-5">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="card shadow-lg border-0">
-                <div class="card-header pb-2"><h4>&nbsp &nbsp<b>{{ __('Login') }}</b></h4></div>
+                <div class="card-header py-3"><h5>&nbsp <b>{{ __('Login') }}</b></h5></div>
 
-                <div class="card-body pt-5">
+                <div class="card-body py-3">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
 
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
@@ -27,7 +32,7 @@
 
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
 
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
@@ -42,7 +47,7 @@
                             <div class="col-md-1"></div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
                                 <div class="form-check">
@@ -56,24 +61,27 @@
                             <div class="col-md-1"></div>
                         </div>
 
-                        <div class="form-group row mt-3">
-                            <div class="mb-3">
-                                <button type="submit" class="btn btn-yellow pl-4 pr-4 offset-md-3 offset-sm-1">
+                        <div class="form-group row my-3">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <button type="submit" class="btn btn-yellow px-4">
                                     {{ __('Login') }}
                                 </button>
                                 <br>
                                 <br>
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link offset-md-2 txt-yellow" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link txt-yellow" href="{{ route('password.request') }}">
                                         {{ __('Lupa Password?') }}
                                     </a>
+                                    <br>
                                 @endif
                                 @if (Route::has('register'))
-                                    <a class="btn btn-link offset-md-2 txt-yellow" href="{{ route('register') }}">
+                                    <a class="btn btn-link txt-yellow" href="{{ route('register') }}">
                                         {{ __('Daftar Sekarang!') }}
                                     </a>
                                 @endif
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
                     </form>
 
@@ -82,5 +90,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

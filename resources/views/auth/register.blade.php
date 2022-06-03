@@ -1,17 +1,22 @@
 @extends('layouts.login-register-layout')
 
+@section('nav-register')
+nav-active
+@endsection
+
 @section('content')
+<div class="auth-content py-5">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="card shadow-lg border-0">
-                <div class="card-header pb-2"> <h4>&nbsp &nbsp<b>{{ __('Register') }}</b></h4> </div>
+                <div class="card-header py-3"> <h4>&nbsp &nbsp<b>{{ __('Register') }}</b></h4> </div>
 
-                <div class="card-body pt-4">
+                <div class="card-body py-3">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
 
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
@@ -26,7 +31,7 @@
                             <div class="col-md-1"></div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
 
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
@@ -41,7 +46,7 @@
                             <div class="col-md-1"></div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
 
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
@@ -56,7 +61,7 @@
                             <div class="col-md-1"></div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
                             {{-- <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label> --}}
 
                             <div class="col-md-1"></div>
@@ -66,7 +71,7 @@
                             <div class="col-md-1"></div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
                             {{-- <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label> --}}
 
                             <div class="col-md-1"></div>
@@ -78,7 +83,7 @@
                         </div>
 
 
-                        <div class="form-group row mt-4">
+                        <div class="form-group row my-4">
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-yellow pl-4 pr-4 offset-md-5 offset-sm-1">
                                     {{ __('Register Now') }}
@@ -90,5 +95,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
