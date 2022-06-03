@@ -26,13 +26,15 @@ class RiwayatController extends Controller
         $riwayat = DB::table('riwayatmodul')
         ->where('userid', '=', $userid);
 
-        if($riwayat->exists()){
-            $modul = $riwayat->join('modul', 'riwayatmodul.modulid', '=', 'modul.modulid')->get();
-        } else {
+        $modul = $riwayat->join('modul', 'riwayatmodul.modulid', '=', 'modul.modulid')->get();
 
+        if($riwayat->exists()){
+            $isExist = true;
+        } else {
+            $isExist = false;
         }
 
-        return view('modul.riwayat-modul-copy', ['modul' => $modul]);
+        return view('modul.riwayat-modul-copy', ['modul' => $modul, 'isExist' => $isExist]);
 
     }
 }

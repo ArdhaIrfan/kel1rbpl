@@ -33,6 +33,11 @@ Route::get('/upload/hapus/{id}', 'Modul\UploadController@hapus');
 
 Route::get('/modul/riwayat/temp', 'Modul\RiwayatController@tampilkan_temp');
 
+Route::get('/artikel/upload', 'Artikel\UploadController@tampilkan');
+
+Route::get('/{modulid}/video/temp', 'Modul\VideoController@tampilkan_temp');
+Route::get('/{modulid}/video/{videoid}', 'Modul\VideoController@tampilkanVideo');
+
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
