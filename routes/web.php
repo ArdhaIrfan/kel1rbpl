@@ -43,6 +43,7 @@ Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 
 //by April
+
 Route::get('/subscription', 'Subscription\MetodeController@tampilkan');
 Route::get('/subscription/metode', 'Subscription\MetodeController@tampilkanmetode');
 Route::get('/subscription/payment', 'Subscription\MetodeController@tampilkanVA');

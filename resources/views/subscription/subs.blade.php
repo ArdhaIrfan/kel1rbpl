@@ -50,17 +50,36 @@
         </div>
         
         <div class="row mt-5 text-center">
-            <div class="col">
-                Column
+            <div class="col md-3 text-center">
+                <h2> 12 Bulan </h2>
+                __
+                <br><br>
+                <h5>Rp45.000</h5><p>/Bulan</p>
+                <p><span style="text-primary">Hemat Rp240.000</span></p>
+                <br><a href="/subscription/metode"><button class="btn btn-primary">Beli Sekarang</button></a>
             </div>
-            <div class="col">
-                Column
+            <div class="col md-3 text-center">
+            <h2> 6 Bulan </h2>
+                __
+                <br><br>
+                <h5>Rp50.000</h5><p>/Bulan</p>
+                <p><span style="text-warning">Hemat Rp90.000</span></p>
+                <br><a href="/subscription/metode"><button class="btn btn-warning">Beli Sekarang</button></a>
             </div>
-            <div class="col">
-                Column
+            <div class="col md-3 text-center">
+            <h2> 3 Bulan </h2>
+                __
+                <br><br>
+                <h5>Rp58.000</h5><p>/Bulan</p>
+                <p><span style="text-warning">Hemat Rp21.000</span></p>
+                <br><a href="/subscription/metode"><button class="btn btn-warning">Beli Sekarang</button></a>
             </div>
-            <div class="col">
-                Column
+            <div class="col md-3 text-center">
+            <h2> 1 Bulan </h2>
+                __
+                <br><br>
+                <h5>Rp65.000</h5><p>/Bulan</p><br>
+                <br><a href="/subscription/metode"><button class="btn btn-warning">Beli Sekarang</button></a>
             </div>
         </div>
     </div>
