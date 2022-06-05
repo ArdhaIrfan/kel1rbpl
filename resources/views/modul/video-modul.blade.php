@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title')
-<title>Video Modul</title>
+    <title>Video Modul</title>
 @endsection
 
 @section('nav-modul')
-nav-active
+    nav-active
 @endsection
 
 @section('local_css')
@@ -43,44 +43,44 @@ nav-active
                 width: 95%;
             }
         }
+
     </style>
 @endsection
 @section('content')
-<body class="text-light">
-    <div class="container col-11 col-md-10 py-5">
+    <div class="container text-light col-11 col-md-10 py-5">
         <div class="column">
             <div class="text-center py-5">
                 <h1>Modul Mahir</h1>
                 <!-- <h6>Tempatmu belajar dan menjadi tak terduga!</h6> -->
             </div>
             <!-- <div class="my-4 pt-2">
-                <h5>Kategori</h5>
-                <div class="d-flex text-center pt-2">
-                    <div class="col-4">
-                        <button type="button" class="btn btn-secondary col-11">Tim</button>
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-secondary col-11">Organisasi</button>
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-secondary col-11">Lomba</button>
+                    <h5>Kategori</h5>
+                    <div class="d-flex text-center pt-2">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-secondary col-11">Tim</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-secondary col-11">Organisasi</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-secondary col-11">Lomba</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex col-12">
-                <div class="d-flex col-md-7">
-                    <a href="#" class="col-md-3 text-warning">Semua Modul</a>
-                    <a href="#" class="col-md-3 text-light">Live Session</a>
+                <div class="d-flex col-12">
+                    <div class="d-flex col-md-7">
+                        <a href="#" class="col-md-3 text-warning">Semua Modul</a>
+                        <a href="#" class="col-md-3 text-light">Live Session</a>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Community"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+                    </div>
                 </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Community"
-                        aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
-                </div>
-            </div>
-            <div>
-                <img src="../../../public/images/kitten.jpg" alt="banner" class="my-3 img-fluid banner">
-            </div> -->
+                <div>
+                    <img src="../../../public/images/kitten.jpg" alt="banner" class="my-3 img-fluid banner">
+                </div> -->
             <div class="column mt-4">
                 <div class="row justify-content-between">
                     <div class="column col-8">
@@ -216,5 +216,4 @@ nav-active
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
-</body>
 @endsection

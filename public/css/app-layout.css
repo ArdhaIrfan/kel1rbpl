@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .bg-black-transparent{
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -51,4 +56,18 @@ ul.no-bullets {
 .head-background {
     background-image: url("/images/back-ide.png");
     height: 70vh;
+}
+
+.search {
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .search {
+        width: 100%;
+    }
+}
+
+.sub-title {
+    font-weight: 400;
 }
