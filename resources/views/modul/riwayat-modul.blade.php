@@ -76,7 +76,7 @@ nav-active
                 <a href="#" class="col-md-3 text-light">Discussion</a> --}}
             </div>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search Community" aria-label="Recipient's username"
+                <input type="text" class="form-control" placeholder="Cari di Riwayat" aria-label="Recipient's username"
                     aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
             </div>
@@ -88,21 +88,27 @@ nav-active
                         <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body bg-dark bg-gradient text-light row" style="height: 100%;">
+                        <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                        title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
                                 </p>
                             </div>
-                            <div class="col-2">
-                                <h6>Kategori</h6>
-                                <p class="text-warning">Tim</p>
-                            </div>
-                            <div class="col-2">
-                                <h6>Tingkat</h6>
-                                <p class="text-warning">Beginner</p>
+                            <div class="col-4 row">
+                                <div class="col-6">
+                                    <h6>Kategori</h6>
+                                    <p class="text-warning">Tim</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Tingkat</h6>
+                                    <p class="text-warning">Beginner</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,21 +120,27 @@ nav-active
                         <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body bg-dark bg-gradient text-light row" style="height: 100%;">
+                        <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                        title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
                                 </p>
                             </div>
-                            <div class="col-2">
-                                <h6>Kategori</h6>
-                                <p class="text-warning">Tim</p>
-                            </div>
-                            <div class="col-2">
-                                <h6>Tingkat</h6>
-                                <p class="text-warning">Beginner</p>
+                            <div class="col-4 row">
+                                <div class="col-6">
+                                    <h6>Kategori</h6>
+                                    <p class="text-warning">Tim</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Tingkat</h6>
+                                    <p class="text-warning">Beginner</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,74 +152,92 @@ nav-active
                         <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body bg-dark bg-gradient text-light row" style="height: 100%;">
+                        <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                        title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
                                 </p>
                             </div>
-                            <div class="col-2">
-                                <h6>Kategori</h6>
-                                <p class="text-warning">Tim</p>
-                            </div>
-                            <div class="col-2">
-                                <h6>Tingkat</h6>
-                                <p class="text-warning">Beginner</p>
+                            <div class="col-4 row">
+                                <div class="col-6">
+                                    <h6>Kategori</h6>
+                                    <p class="text-warning">Tim</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Tingkat</h6>
+                                    <p class="text-warning">Beginner</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card mb-3 border-0 col-12">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body bg-dark bg-gradient text-light row" style="height: 100%;">
-                        <div class="col-8">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <h6>Kategori</h6>
-                            <p class="text-warning">Tim</p>
-                        </div>
-                        <div class="col-2">
-                            <h6>Tingkat</h6>
-                            <p class="text-warning">Beginner</p>
+            <div class="card mb-3 border-0 col-12">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
+                            <div class="col-8">
+                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                        title</a></h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                            <div class="col-4 row">
+                                <div class="col-6">
+                                    <h6>Kategori</h6>
+                                    <p class="text-warning">Tim</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Tingkat</h6>
+                                    <p class="text-warning">Beginner</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card mb-3 border-0 col-12">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body bg-dark bg-gradient text-light row" style="height: 100%;">
-                        <div class="col-8">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <h6>Kategori</h6>
-                            <p class="text-warning">Tim</p>
-                        </div>
-                        <div class="col-2">
-                            <h6>Tingkat</h6>
-                            <p class="text-warning">Beginner</p>
+            <div class="card mb-3 border-0 col-12">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{ url('images/kitten2.jpg') }}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
+                            <div class="col-8">
+                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                        title</a></h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                            <div class="col-4 row">
+                                <div class="col-6">
+                                    <h6>Kategori</h6>
+                                    <p class="text-warning">Tim</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Tingkat</h6>
+                                    <p class="text-warning">Beginner</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -58,6 +58,21 @@ ul.no-bullets {
     height: 70vh;
 }
 
+.landing-background {
+    background-image: url("/images/coverlanding.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .search {
     width: 40%;
 }
@@ -65,6 +80,9 @@ ul.no-bullets {
 @media only screen and (max-width: 767px) {
     .search {
         width: 100%;
+    }
+    .card {
+        margin: 0 auto;
     }
 }
 
