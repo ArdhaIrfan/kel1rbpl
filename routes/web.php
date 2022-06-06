@@ -45,6 +45,7 @@ Route::get('/artikel/upload', 'Artikel\UploadController@tampilkan')->middleware(
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
+Route::get('/artikel/isi', 'Artikel\IsiController@tampilkan');
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 
 //by April
