@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Modul;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -37,4 +38,14 @@ class RiwayatController extends Controller
         return view('modul.riwayat-modul-copy', ['modul' => $modul, 'isExist' => $isExist]);
 
     }
+
+    public function update_riwayat($modulid){
+        $userid = Auth::id();
+
+        DB::table('riwayatmodul')
+        ->updateOrInsert(
+            ['userid'=>$userid, 'modulid'=>$modulid]
+        );
+    }
+
 }
