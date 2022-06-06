@@ -90,7 +90,7 @@ nav-active
                     <div class="col-md-8">
                         <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                <h5 class="card-title"><a href="#" class="standard-link text-light">Card
                                         title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -106,8 +106,34 @@ nav-active
                                     <h6>Tingkat</h6>
                                     <p class="text-warning">Beginner</p>
                                 </div>
+
+                                <!-- Button trigger modal -->
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                    <button type="button" class="text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"
+                                        style="background: transparent; border: none; font-size: 90%;">Hapus</button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header col-11 mx-auto">
+                                                <h5 class="modal-title text-warning" id="exampleModalLabel">Hapus Riwayat</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body col-11 mx-auto my-3">
+                                                <p>Apakah anda yakin untuk menghapus riwayat ini?</p>
+                                            </div>
+                                            <div class="modal-footer col-11 mx-auto">
+                                                <button type="button" class="btn btn-secondary mx-2"
+                                                    data-bs-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-warning mx-2">Hapus</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +148,7 @@ nav-active
                     <div class="col-md-8">
                         <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                <h5 class="card-title"><a href="#" class="standard-link text-light">Card
                                         title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -138,8 +164,34 @@ nav-active
                                     <h6>Tingkat</h6>
                                     <p class="text-warning">Beginner</p>
                                 </div>
+
+                                <!-- Button trigger modal -->
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                    <button type="button" class="text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"
+                                        style="background: transparent; border: none; font-size: 90%;">Hapus</button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header col-11 mx-auto">
+                                                <h5 class="modal-title text-warning" id="exampleModalLabel">Hapus Riwayat</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body col-11 mx-auto my-3">
+                                                <p>Apakah anda yakin untuk menghapus riwayat ini?</p>
+                                            </div>
+                                            <div class="modal-footer col-11 mx-auto">
+                                                <button type="button" class="btn btn-secondary mx-2"
+                                                    data-bs-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-warning mx-2">Hapus</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +206,7 @@ nav-active
                     <div class="col-md-8">
                         <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                <h5 class="card-title"><a href="#" class="standard-link text-light">Card
                                         title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -170,8 +222,34 @@ nav-active
                                     <h6>Tingkat</h6>
                                     <p class="text-warning">Beginner</p>
                                 </div>
+
+                                <!-- Button trigger modal -->
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                    <button type="button" class="text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"
+                                        style="background: transparent; border: none; font-size: 90%;">Hapus</button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header col-11 mx-auto">
+                                                <h5 class="modal-title text-warning" id="exampleModalLabel">Hapus Riwayat</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body col-11 mx-auto my-3">
+                                                <p>Apakah anda yakin untuk menghapus riwayat ini?</p>
+                                            </div>
+                                            <div class="modal-footer col-11 mx-auto">
+                                                <button type="button" class="btn btn-secondary mx-2"
+                                                    data-bs-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-warning mx-2">Hapus</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +264,7 @@ nav-active
                     <div class="col-md-8">
                         <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                <h5 class="card-title"><a href="#" class="standard-link text-light">Card
                                         title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -202,8 +280,34 @@ nav-active
                                     <h6>Tingkat</h6>
                                     <p class="text-warning">Beginner</p>
                                 </div>
+
+                                <!-- Button trigger modal -->
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                    <button type="button" class="text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"
+                                        style="background: transparent; border: none; font-size: 90%;">Hapus</button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header col-11 mx-auto">
+                                                <h5 class="modal-title text-warning" id="exampleModalLabel">Hapus Riwayat</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body col-11 mx-auto my-3">
+                                                <p>Apakah anda yakin untuk menghapus riwayat ini?</p>
+                                            </div>
+                                            <div class="modal-footer col-11 mx-auto">
+                                                <button type="button" class="btn btn-secondary mx-2"
+                                                    data-bs-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-warning mx-2">Hapus</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +322,7 @@ nav-active
                     <div class="col-md-8">
                         <div class="card-body text-light row" style="background-color: #171a1e; height: 100%;">
                             <div class="col-8">
-                                <h5 class="card-title"><a href="#" class="stretched-link standard-link text-light">Card
+                                <h5 class="card-title"><a href="#" class="standard-link text-light">Card
                                         title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -234,8 +338,34 @@ nav-active
                                     <h6>Tingkat</h6>
                                     <p class="text-warning">Beginner</p>
                                 </div>
+
+                                <!-- Button trigger modal -->
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="button" class="align-self-end btn btn-danger">Hapus</button>
+                                    <button type="button" class="text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"
+                                        style="background: transparent; border: none; font-size: 90%;">Hapus</button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header col-11 mx-auto">
+                                                <h5 class="modal-title text-warning" id="exampleModalLabel">Hapus Riwayat</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body col-11 mx-auto my-3">
+                                                <p>Apakah anda yakin untuk menghapus riwayat ini?</p>
+                                            </div>
+                                            <div class="modal-footer col-11 mx-auto">
+                                                <button type="button" class="btn btn-secondary mx-2"
+                                                    data-bs-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-warning mx-2">Hapus</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -244,65 +374,6 @@ nav-active
             </div>
         </div>
     </div>
-    <!-- <div>
-                    <img src="../../../public/images/kitten.jpg" alt="banner" class="my-3 img-fluid banner">
-                </div> -->
-    <!-- <div class="row justify-content-between mt-5">
-                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                        <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
-                        <div class="card-body bg-dark bg-gradient text-light">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                        <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
-                        <div class="card-body bg-dark bg-gradient text-light">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                        <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
-                        <div class="card-body bg-dark bg-gradient text-light">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                        <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
-                        <div class="card-body bg-dark bg-gradient text-light">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                        <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
-                        <div class="card-body bg-dark bg-gradient text-light">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                        <img src="../../../public/images/kitten2.jpg" class="card-img-top mx-0" alt="modul card">
-                        <div class="card-body bg-dark bg-gradient text-light">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div> -->
 </div>
 
 
