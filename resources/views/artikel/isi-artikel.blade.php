@@ -44,72 +44,23 @@
 @section('content')
     <div class="container col-11 col-md-10 py-5">
         <div class="column">
-            <div class="pb-3">
-                <img style="max-width: 20%; " src="{{url('images/logo-ide-navbar.png')}}" alt="banner" class="rounded float-left">
-                <h1 style="font-weight: 1000; font-size: 70px">Artikel</h1>
-            </div>
-            <div class="d-flex col-12">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Community"
-                        aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+            <div class="row">
+                <div class="col">
+                    <h1>Oprec Schematics 2021</h1>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>by Admin</p>
+                        </div>
+                        <div class="col-2">
+                            <p>Jul, 22 2021</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5">
-                    <img src="{{url('images/bayucaraka.png')}}" alt="banner" class="my-3 img-fluid banner">
-
-                </div>
-                <div class="col-lg-7">
-                    <div class="col-lg-9">
-                        <h3>
-                            Bayucaraka Open Recruitment — Simak Apa Saja yang Perlu Kamu Persiapkan!
-                        </h3>
-                    </div>
-                    <h6 class="pb-3" style="font-weight: 10;">
-                        Bayucaraka ITS is looking for new members. Are you ready to be a part of us? For those of you who are interested in the world of UAV and want to learn more about the world of UAV, come join us!
-                    </h6>
-
-                    <div class="row">
-                        <div class="col-3">
-                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="banner"  class="rounded float-end">
-                        </div>
-                        <div class="col-9">
-                            <h6>April</h6>
-                            <h6 style="font-weight: 10;">Tim Ilmu Dewantara</h6>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-5">
-                    <img src="{{url('images/orang-bertopi.png')}}" alt="banner" class="my-3 img-fluid banner">
-
-                </div>
-                <div class="col-lg-7">
-                    <div class="col-lg-9">
-                        <h3>
-                            Live Session Bersama Lunde akan Kembali!
-                        </h3>
-                    </div>
-                    <h6 class="pb-3" style="font-weight: 10;">
-                        Anda mendengarnya dengan benar! Setelah pidato hebat minggu lalu tentang topik manajemen waktu yang efektif untuk para mahasiswa, John Doe akan kembali lagi untuk yang lain. Kali ini tentang efektivitas social engagement antara mahasiswa di dalam kegiatan kuliah dan di luar.
-                    </h6>
-
-                    <div class="row">
-                        <div class="col-3">
-                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="banner"  class="rounded float-end">
-                        </div>
-                        <div class="col-9">
-                            <h6>April</h6>
-                            <h6 style="font-weight: 10;">Tim Ilmu Dewantara</h6>
-                        </div>
-                    </div>
-
-
+                <div class="col">
+                    <img src="{{url('images/orang-ngumpul.png')}}" alt="responsive image" class="my-2 img-fluid">
+                    <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum nulla commodi illo, repudiandae assumenda sunt expedita doloribus adipisci odio perferendis fugit possimus deserunt id soluta debitis dignissimos inventore amet.</p>
                 </div>
             </div>
 

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class ListController extends Controller
+class IsiController extends Controller
 {
     //by Ghif
     public function tampilkan() {

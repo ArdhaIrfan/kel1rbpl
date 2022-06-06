@@ -45,7 +45,7 @@
     <div class="container col-11 col-md-10 py-5">
         <div class="column">
             <div class="pb-3">
-                <img style="max-width: 20%; " src="{{url('images/logo-ide-navbar.png')}}" alt="banner" class="rounded float-left">
+                <img style="max-width: 20%; " src="{{url('images/logo-ide-navbar.png')}}" alt="responsive image" class="rounded float-left">
                 <h1 style="font-weight: 1000; font-size: 70px">Artikel</h1>
             </div>
             <div class="d-flex col-12">
@@ -57,7 +57,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img src="{{url('images/bayucaraka.png')}}" alt="banner" class="my-3 img-fluid banner">
+                    <img src="{{url('images/bayucaraka.png')}}" alt="responsive image" class="my-3 img-fluid banner">
 
                 </div>
                 <div class="col-lg-7">
@@ -72,7 +72,7 @@
 
                     <div class="row">
                         <div class="col-3">
-                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="banner"  class="rounded float-end">
+                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="responsive image"  class="rounded float-end">
                         </div>
                         <div class="col-9">
                             <h6>April</h6>
@@ -86,7 +86,7 @@
 
             <div class="row">
                 <div class="col-lg-5">
-                    <img src="{{url('images/orang-bertopi.png')}}" alt="banner" class="my-3 img-fluid banner">
+                    <img src="{{url('images/orang-bertopi.png')}}" alt="responsive image" class="my-3 img-fluid banner">
 
                 </div>
                 <div class="col-lg-7">
@@ -101,7 +101,7 @@
 
                     <div class="row">
                         <div class="col-3">
-                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="banner"  class="rounded float-end">
+                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="responsive image"  class="rounded float-end">
                         </div>
                         <div class="col-9">
                             <h6>April</h6>
