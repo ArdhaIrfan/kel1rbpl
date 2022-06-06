@@ -39,6 +39,24 @@
                 width: 95%;
             }
         }
+
+        /* unvisited link */
+        a:link {
+            text-decoration: none;
+            color: white!important;
+        }
+        a{
+            text-decoration: none;
+            color: white!important;
+        }
+
+        /* mouse over link */
+        a:hover {
+            text-decoration: none;
+            color: rgb(231, 231, 231)!important;
+        }
+
+
     </style>
 @endsection
 @section('content')
@@ -55,7 +73,42 @@
                     <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
                 </div>
             </div>
+            @foreach ($artikel as $a)
+            <a   href="/artikel/isi/{{$a->artikelid}}" target="_blank">
             <div class="row">
+                <div class="col-lg-5">
+                    <img src="{{url('images/'.$a->gambar)}}" alt="responsive image" class="my-3 img-fluid banner">
+
+                </div>
+                <div class="col-lg-7">
+                    <div class="col-lg-9">
+                        <h3>
+                           {{$a->title}}
+                        </h3>
+                    </div>
+                    <div class="col">
+                        <p class="card-text">{{ \Illuminate\Support\Str::limit($a->konten, 200, $end='...') }}</p>
+                    </div>
+
+                    <div class="row py-5">
+                        <div class="col-3">
+                            <img style="max-width: 50%;" src="{{url('images/img-tim.png')}}" alt="responsive image"  class="rounded float-end">
+                        </div>
+                        <div class="col-9">
+                            <h6>April</h6>
+                            <h6 style="font-weight: 10;">Tim Ilmu Dewantara</h6>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </a>
+            @endforeach
+
+
+
+            {{-- <div class="row">
                 <div class="col-lg-5">
                     <img src="{{url('images/bayucaraka.png')}}" alt="responsive image" class="my-3 img-fluid banner">
 
@@ -97,6 +150,7 @@
                     </div>
                     <h6 class="pb-3" style="font-weight: 10;">
                         Anda mendengarnya dengan benar! Setelah pidato hebat minggu lalu tentang topik manajemen waktu yang efektif untuk para mahasiswa, John Doe akan kembali lagi untuk yang lain. Kali ini tentang efektivitas social engagement antara mahasiswa di dalam kegiatan kuliah dan di luar.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos quod quisquam animi expedita fuga ipsum repudiandae. Iste, obcaecati odio ex doloribus enim, deserunt ullam voluptas quo ab numquam est.
                     </h6>
 
                     <div class="row">
@@ -111,9 +165,9 @@
 
 
                 </div>
-            </div>
+            </div> --}}
 
-            <div class="row mt-5">
+            {{-- <div class="row mt-5">
                 @foreach ($artikel as $a)
                     <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                         <img src="{{url('gambar_modul/'.$a->gambar)}}" class="card-img-top mx-0" alt="modul card">
@@ -124,7 +178,7 @@
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div> --}}
 
             {{ $artikel->links() }}
 

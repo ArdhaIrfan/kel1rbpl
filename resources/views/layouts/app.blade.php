@@ -60,7 +60,7 @@
                                     }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-white @yield('nav-artikel')" href="/">{{ __('ARTIKEL')
+                                <a class="nav-link nav-link-white @yield('nav-artikel')" href="/artikel/list">{{ __('ARTIKEL')
                                     }}</a>
                             </li>
                             <li class="nav-item">

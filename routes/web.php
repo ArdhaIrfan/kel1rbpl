@@ -40,7 +40,7 @@ Route::get('/{modulid}/video/{videoid}', 'Modul\VideoController@tampilkanVideo')
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
-Route::get('/artikel/isi', 'Artikel\IsiController@tampilkan');
+Route::get('/artikel/isi/{id}', 'Artikel\IsiController@tampilkan');
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 
 //by April

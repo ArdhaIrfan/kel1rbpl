@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class IsiController extends Controller
 {
     //by Ghif
-    public function tampilkan() {
+    public function tampilkan($id) {
 
         $artikel = DB::table('artikel')->paginate(6);
         return view('artikel.isi-artikel', ['artikel' => $artikel]);
