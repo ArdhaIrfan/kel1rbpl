@@ -35,5 +35,11 @@ Route::get('/modul/riwayat/temp', 'Modul\RiwayatController@tampilkan_temp');
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
+
+// by Bashara
+Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@tampilkan');
+Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan');
+Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan');
+
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 
