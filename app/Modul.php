@@ -9,4 +9,5 @@ class Modul extends Model
     protected $table = "modul";
 
     protected $fillable = ['title','deskripsi','gambar'];
+
 }

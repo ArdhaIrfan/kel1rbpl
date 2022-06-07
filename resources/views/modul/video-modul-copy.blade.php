@@ -117,17 +117,25 @@
                 <div class="row justify-content-between">
                     <div class="column col-8">
                         <div class="col-12 my-4">
-                            <iframe width="100%" height="400" src={{$video->video}}
-                                title={{$video->title}} frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
+                            @if ($isVideoExist == 1)
+                                <iframe width="100%" height="400" src={{$video->video}}
+                                    title={{$video->title}} frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            @else
+                                No Videos Yet
+                            @endif
                         </div>
                     </div>
                     <div class="column col-3 my-4">
                         <h5 class="mb-3">Konten Modul</h5>
+                        @foreach ($listvideo as $lv)
+
+                        @endforeach
                         <div class="col-12">
                             Materi 1
+
                         </div>
                         <div class="col-12">
                             Materi 2
