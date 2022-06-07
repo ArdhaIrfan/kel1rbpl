@@ -61,10 +61,10 @@
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p>Langganan 6 bulan</p>
+                                    <p>Langganan {{$tipe->bulan}} bulan</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>Rp 300.000</p>
+                                    <p>Rp {{$tipe->bulan * $tipe->hargaperbulan}}</p>
                                 </div>
                             </div>
                             <hr>
@@ -73,7 +73,7 @@
                                     <p>Ppn 10%</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>Rp 30.000</p>
+                                    <p>Rp {{$tipe->bulan * $tipe->hargaperbulan * 0.1}}</p>
                                 </div>
                             </div>
                             <hr>
@@ -82,7 +82,7 @@
                                     <p>Total</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>Rp 330.000</p>
+                                    <p>Rp {{$tipe->bulan * $tipe->hargaperbulan * 1.1}}</p>
                                 </div>
                             </div>
                         </div>

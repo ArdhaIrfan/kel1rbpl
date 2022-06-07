@@ -48,12 +48,8 @@
         
         <div class="column mt-4 text-center">
             <div class="text-center">
-                <h3><?php
-                    $mt_rand = mt_rand(10000000,9999999999);
-
-                    echo $mt_rand;
-
-                    ?>
+                <h3>
+                    
                 </h3>
                 <p>Virtual Account akan kadaluarsa dalam 24 jam</p>
             </div>
