@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-<title>Upload Modul</title>
+<title>Upload Artikel</title>
 @endsection
 @section('local_css')
     <style>
@@ -46,7 +46,7 @@
 	<div class="row">
 		<div class="container">
 
-			<h2 class="text-center my-5">Upload Modul</h2>
+			<h2 class="text-center my-5">Upload Artikel</h2>
 
 			<div class="col-lg-8 mx-auto my-5">
 
@@ -58,18 +58,18 @@
 				</div>
 				@endif
 
-				<form action="/modul/upload/proses" method="POST" enctype="multipart/form-data">
+				<form action="/artikel/upload/proses" method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
 
                     <div>
-                        <b>Judul Modul</b>
+                        <b>Judul Artikel</b>
                         <br>
                         <input type="text" name="title">
                     </div>
                     <br>
                     <div class="form-group">
-						<b>Deskripsi</b>
-						<textarea class="form-control" name="deskripsi"></textarea>
+						<b>Konten</b>
+						<textarea class="form-control" name="konten"></textarea>
 					</div>
                     <br>
 					<div class="form-group">
@@ -93,12 +93,12 @@
 						</tr>
 					</thead>
 					<tbody>
-						@foreach($modul as $m)
+						@foreach($artikel as $a)
 						<tr>
-							<td class="text-secondary">{{$m->title}}</td>
-                            <td class="text-secondary">{{$m->deskripsi}}</td>
-                            <td class="text-secondary"><img width="150px" src="{{ url('/gambar_modul/'.$m->gambar) }}"></td>
-							<td class="text-secondary"><a class="btn btn-danger" href="/upload/hapus/{{ $m->modulid }}">HAPUS</a></td>
+							<td class="text-secondary">{{$a->title}}</td>
+                            <td class="text-secondary">{{$a->konten}}</td>
+                            <td class="text-secondary"><img width="150px" src="{{ url('/images/'.$a->gambar) }}"></td>
+							<td class="text-secondary"><a class="btn btn-danger" href="/upload/hapus/{{ $a->artikelid }}">HAPUS</a></td>
 						</tr>
 						@endforeach
 					</tbody>

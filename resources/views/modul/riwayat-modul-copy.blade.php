@@ -82,8 +82,7 @@
                     <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
                 </div>
             </div>
-            <div class="my-5">
-
+            @if ($isExist)
                 @foreach ($modul as $m)
                     <div class="card mb-3 border-0 col-12">
                         <div class="row g-0">
@@ -100,6 +99,14 @@
                         </div>
                     </div>
                 @endforeach
+            @else
+                <div>
+                    <p>Belum ada riwayat</p>
+                </div>
+            @endif
+            <div class="my-5">
+
+
 
             </div>
 

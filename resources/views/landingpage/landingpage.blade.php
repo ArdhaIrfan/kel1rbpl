@@ -1,5 +1,21 @@
 @extends('layouts.app')
 
+@section('title')
+<title>Ilmu Dewantara</title>
+@endsection
+
+@section('nav-home')
+nav-active
+@endsection
+
+@section('landingcover')
+landing-background
+@endsection
+
+@section('overlay')
+overlay
+@endsection
+
 @section('local_css')
     <style>
         .banner {
@@ -43,9 +59,9 @@
 @endsection
 
 @section('content')
-    <div class="pt-5 pb-5" style="background-image: url('../../../public/images/login-register-bg.png');">
-        <div id="landing-welcome" class="container row">
-            <div class="col-md-5 ml-auto">
+    <div class="" style="height: 100vh; padding-top: 6%;">
+        <div id="landing-welcome" class="container row mx-auto">
+            <div class="col-md-6">
                 <h1 class="py-3"> Manfaatkan Potensi <span class="text-warning"> Dirimu!</span> </h1>
                 <p class="caption">
                     Temukan rahasia sukses perkuliahanmu di bidang nonakademik dengan mudah
@@ -56,25 +72,20 @@
                 </p>
             </div>
 
-
-            <div class="col-md-6 text-center mt-5">
-
-                <img class="" src="{{url('images/kitten.jpg')}}" height="200" />
-
+            <div class="col-md-6 text-center mt-5 mx-auto">
+                <img class="" src="{{url('images/parallax.png')}}" style="height: 250; width: 100%; overflow: hidden; object-fit: cover;">
             </div>
         </div>
     </div>
 
 
-    <div id="landing-overview" class="container row mt-5 ml-auto mr-5">
-        <div class="col-md-6 text-center mt-5">
-
-            <img class="" src="{{url('images/kitten.jpg')}}" height="200" />
-
+    <div id="landing-overview" class="container row mx-auto mb-5">
+        <div class="col-md-6 text-center mb-5 py-auto">
+            <img class="col-10 mx-auto" src="{{url('images/ide-ipad.png')}}" style="height: auto; width: 60%; overflow: hidden; object-fit: cover;">
         </div>
 
         <div class="col-md-6">
-            <h2 class="mt-lg-5">
+            <h2 class="">
                 Tidak Perlu Bingung Untuk Mengawali <span class="text-warning"> Kuliahmu! </span>
             </h2>
             <p class="">
@@ -105,22 +116,28 @@
         </div>
     </div>
 
-    <div id="landing-modul" class="container mt-5 ml-5">
+    <div id="landing-modul" class="container mt-5 col-11 px-auto">
         <div class="mb-5">
-
             &nbsp;
-            <h1 class="">Module
+            <h2 class="">Modul
                 <span class="text-warning">MAHIR</span>
                 dari IlmuDewantara
-            </h1>
-
+            </h2>
             <p class="">
                 Video dan materi tertulis yang kami sediakan dikurasi oleh orang-orang yang berpengalaman di bidangnya.
             </p>
-
         </div>
 
-        <div class="row mt-5">
+        <div class="row col-12 mt-5 ">
+            <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+                <img src="{{url('images/kitten.jpg')}}" class="card-img-top mx-0" alt="modul card">
+                <div class="card-body bg-dark bg-gradient text-light">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
             <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                 <img src="{{url('images/kitten.jpg')}}" class="card-img-top mx-0" alt="modul card">
                 <div class="card-body bg-dark bg-gradient text-light">
