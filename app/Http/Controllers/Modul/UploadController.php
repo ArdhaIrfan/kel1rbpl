@@ -126,13 +126,33 @@ class UploadController extends Controller
     public function hapusVideo($modulid, $videoid){
         if($this->checkAdmin()){
             // hapus file
-            $video = DB::table('videopembelajaran')
+            DB::table('videopembelajaran')
             ->where('modulid', '=', $modulid)
             ->where('videoid', '=', $videoid)
             ->delete();
 
             return redirect()->back();
         } else {
+            return redirect('/landing');
+        }
+    }
+
+    public function simpanVideo(Request $request){
+        if($this->checkAdmin()){
+
+            $videoid = DB::table('videopembelajaran')
+            -> where('modulid', '=', $request->modulid)
+            ->get()->count() + 1;
+
+            DB::table('videopembelajaran')->insert([
+                'videoid' => $videoid,
+                'modulid' => $request->modulid,
+                'title' => $request->title,
+                'video' => $request->video
+            ]);
+
+            return redirect()->back();
+        } else{
             return redirect('/landing');
         }
     }

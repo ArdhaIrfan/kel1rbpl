@@ -11,4 +11,8 @@ class UbahProfilController extends Controller
         return view('Pengaturan.ubah-profil');
     }
     //
+    //by arif
+    public function tampilkantemp(){
+        return view('Pengaturan.ubah-profil-copy');
+    }
 }

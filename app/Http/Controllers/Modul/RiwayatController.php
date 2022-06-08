@@ -12,16 +12,6 @@ class RiwayatController extends Controller
 {
     //by Ardha
     public function tampilkan() {
-        // $modul = DB::table('absen')
-        // ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
-        // ->select('absen.*', 'pegawai.pegawai_nama')
-        // ->paginate();
-        return view('modul.riwayat-modul');
-    }
-
-    // by Arif
-    public function tampilkan_temp() {
-
         $userid = Auth::id();
 
         $riwayat = DB::table('riwayatmodul')
@@ -35,9 +25,10 @@ class RiwayatController extends Controller
             $isExist = false;
         }
 
-        return view('modul.riwayat-modul-copy', ['modul' => $modul, 'isExist' => $isExist]);
-
+        return view('modul.riwayat-modul', ['modul' => $modul, 'isExist' => $isExist]);
     }
+
+    // by Arif
 
     public function update_riwayat($modulid){
         $userid = Auth::id();
@@ -46,6 +37,17 @@ class RiwayatController extends Controller
         ->updateOrInsert(
             ['userid'=>$userid, 'modulid'=>$modulid]
         );
+    }
+
+    public function hapusRiwayat($modulid){
+        $userid = Auth::id();
+
+        DB::table('riwayatmodul')
+        ->where('userid', '=', $userid)
+        ->where('modulid', '=', $modulid)
+        ->delete();
+
+        return redirect()->back();
     }
 
 }

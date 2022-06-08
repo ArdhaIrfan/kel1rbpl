@@ -89,7 +89,7 @@
                             <h5 class="card-title">{{ $m->title }}</h5>
                             <p class="card-text">{{ \Illuminate\Support\Str::limit($m->deskripsi, 100, $end = '...') }}
                             </p>
-                            <a href="#" class="stretched-link"></a>
+                            <a href="/modul/video/{{$m->modulid}}" class="stretched-link"></a>
                         </div>
                     </div>
                 @endforeach
