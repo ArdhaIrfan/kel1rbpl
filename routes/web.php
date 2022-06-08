@@ -30,6 +30,7 @@ Route::get('/modul/video/{modulid}', 'Modul\VideoController@tampilkan')->middlew
 Route::get('/landing', 'LandingPageController@tampilkan');
 
 Route::get('/modul/riwayat/hapus/{modulid}', 'Modul\RiwayatController@hapusRiwayat')->middleware('auth');
+Route::get('/modul/cari','Modul\ListController@pencarian');
 
 Route::get('/modul/upload', 'Modul\UploadController@tampilkan')->middleware('auth');
 Route::post('/modul/upload/proses', 'Modul\UploadController@inputModul')->middleware('auth');
@@ -45,8 +46,6 @@ Route::post('/modul/video/laporan', 'Modul\VideoController@simpanLaporan')->midd
 Route::get('/artikel/upload', 'Artikel\UploadController@tampilkan')->middleware('auth');
 Route::post('/artikel/upload/proses', 'Artikel\UploadController@simpanArtikel')->middleware('auth');
 Route::get('/artikel/upload/hapus/{id}', 'Artikel\UploadController@hapusArtikel')->middleware('auth');
-
-Route::get('/profil/langganan/temp', 'Pengaturan\LanggananController@tampilkantemp');
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
