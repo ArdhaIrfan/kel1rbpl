@@ -98,7 +98,11 @@
 							<td class="text-secondary">{{$m->title}}</td>
                             <td class="text-secondary">{{$m->deskripsi}}</td>
                             <td class="text-secondary"><img width="150px" src="{{ url('/gambar_modul/'.$m->gambar) }}"></td>
-							<td class="text-secondary"><a class="btn btn-danger" href="/upload/hapus/{{ $m->modulid }}">HAPUS</a></td>
+							<td class="text-secondary">
+                                <a class="btn btn-danger" href="/modul/upload/hapus/{{ $m->modulid }}">Hapus</a>
+                                <br>
+                                <a class="btn btn-primary" href="/modul/upload/edit/{{ $m->modulid }}">Edit</a>
+                            </td>
 						</tr>
 						@endforeach
 					</tbody>

@@ -48,43 +48,48 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <div class="">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-white @yield('nav-home')" href="/landing">{{ __('HOME')
-                                        }}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-white @yield('nav-modul')" href="/modul/list">{{
-                                        __('MODUL')
-                                        }}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-white @yield('nav-artikel')" href="#">{{ __('ARTIKEL')
-                                        }}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-white @yield('nav-subscription')" href="/subscription">{{
-                                        __('SUBSCRIPTION') }}</a>
-                                </li>
-                                <!-- Authentication Links -->
-                                @guest
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-white" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                                @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-white" href="{{ route('register') }}">{{ __('Register')
-                                        }}</a>
-                                </li>
-                                @endif
-                                @else
-                                <li class="nav-item dropdown text-uppercase">
-                                    <a id="navbarDropdown" class="nav-link nav-link-white dropdown-toggle" href="#"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                        v-pre>
-                                        {{ Auth::user()->name }} <span class="caret"></span>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white @yield('nav-home')" href="/landing">{{ __('HOME')
+                                    }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white @yield('nav-modul')" href="/modul/list">{{ __('MODUL')
+                                    }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white @yield('nav-artikel')" href="/artikel/list">{{ __('ARTIKEL')
+                                    }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white @yield('nav-subscription')" href="/">{{
+                                    __('SUBSCRIPTION') }}</a>
+                            </li>
+                            <!-- Authentication Links -->
+                            @guest
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" href="{{ route('register') }}">{{ __('Register')
+                                    }}</a>
+                            </li>
+                            @endif
+                            @else
+                            <li class="nav-item dropdown text-uppercase">
+                                <a id="navbarDropdown" class="nav-link nav-link-white dropdown-toggle" href="#"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item nav-link-white" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                 document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right bg-dark"
