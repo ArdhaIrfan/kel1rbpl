@@ -110,8 +110,9 @@
                         </p>
                     </div>
                     <div class="card-body text-center">
-                        <button class="btn btn-lg px-4 fw-bold btn-active"
-                            style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
+                        <a class="btn btn-lg px-4 fw-bold btn-active"
+                            style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/4">Beli Sekarang
+                        </a>
                     </div>
                 </div>
             </div>
@@ -136,8 +137,9 @@
                         </p>
                     </div>
                     <div class="card-body text-center">
-                        <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
-                            Sekarang</button>
+                        <a class="btn btn-lg px-4 fw-bold btn-active"
+                            style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/3">Beli Sekarang
+                        </a>
                     </div>
                 </div>
             </div>
@@ -146,24 +148,25 @@
                     <div class="card-body">
                         <div class="text-center">
                             <h3 class="card-title fw-bold">
-                                6 Bulan
+                                3 Bulan
                             </h3>
                             <small>
                                 <hr class="my-3">
                             </small>
-                            <span class="h4 fw-bold">Rp50.000</span>/bulan
+                            <span class="h4 fw-bold">Rp58.000</span>/bulan
                             <br>
-                            <span class="h6 text-warning">Hemat Rp90.000</span>
+                            <span class="h6 text-warning">Hemat Rp21.000</span>
                         </div>
                         <p class="card-text text-center pt-3 fw-bold text-secondary">
                             <small>
-                                * Pembayaran langsung 6 bulan di depan.
+                                * Pembayaran langsung 3 bulan di depan.
                             </small>
                         </p>
                     </div>
                     <div class="card-body text-center">
-                        <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
-                            Sekarang</button>
+                        <a class="btn btn-lg px-4 fw-bold btn-active"
+                            style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/2">Beli Sekarang
+                        </a>
                     </div>
                 </div>
             </div>
@@ -188,8 +191,9 @@
                         </p>
                     </div>
                     <div class="card-body text-center">
-                        <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
-                            Sekarang</button>
+                        <a class="btn btn-lg px-4 fw-bold btn-active"
+                            style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/1">Beli Sekarang
+                        </a>
                     </div>
                 </div>
             </div>

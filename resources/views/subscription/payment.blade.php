@@ -49,14 +49,14 @@
         <div class="column mt-4 text-center">
             <div class="text-center">
                 <h3>
-                    
+                    {{$VA->nomor}}
                 </h3>
                 <p>Virtual Account akan kadaluarsa dalam 24 jam</p>
             </div>
             <div>
-                <button class="btn btn-warning" action="">
+                <a class="btn btn-warning" href="/subscription/payment/process/{{$tipeid}}">
                     Konfirmasi Pembayaran
-                </button>
+                </a>
             </div>
         </div>
     </div>

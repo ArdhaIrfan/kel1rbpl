@@ -91,7 +91,7 @@
                 <div class="card bg-dark py-auto mx-auto mt-4">
                     <div class="card-body text-center">
                         <h5 class="card-title my-3">Pilih Metode Pembayaran</h5>
-                        <form class="mt-5" action="/subscription/payment">
+                        <form class="mt-5" action="/subscription/generate/{{$tipe->id}}">
                             <select class="form-select mb-3" aria-label="Default select example">
                                 <option selected>Pilih</option>
                                 <option value="transfer">Transfer Bank/M-Banking</option>

@@ -61,5 +61,6 @@ Route::get('/subscription', 'Subscription\MetodeController@tampilkan');
 Route::get('/subscription/metode/{id}', 'Subscription\MetodeController@tampilkanmetode');
 Route::get('/subscription/payment/{id}', 'Subscription\MetodeController@tampilkanVA');
 
-Route::get('/subscription/generate', 'Subscription\MetodeController@generateVANumber');
+Route::get('/subscription/generate/{id}', 'Subscription\MetodeController@generateVANumber');
+Route::get('/subscription/payment/process/{id}', 'Subscription\MetodeController@ubahStatusPembayaran');
 
