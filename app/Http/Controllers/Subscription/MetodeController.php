@@ -37,9 +37,7 @@ class MetodeController extends Controller
     }
 
     public function ubahStatusPembayaran($id){
-        DB::table('virtualaccountnumber')->where('userid','=',Auth::id())-> where('status','=',1)->update([
-            'status' => 0
-        ]);
+        DB::table('virtualaccountnumber')->where('userid','=',Auth::id())-> where('status','=',1)->delete();
         $bulan=DB::table('tipesubscription')->where('id', '=', $id)->first();
         DB::table('subscription')->where('userid', '=', Auth::id())->update([
             'status'=>0
