@@ -95,7 +95,8 @@ class UploadController extends Controller
         if($this->checkAdmin()){
             $modul = Modul::where('modulid',$request->id)->first();
 
-            $gambar = $request->gambar;
+            // menyimpan data file yang diupload ke variabel $file
+            $gambar = $request->file('gambar');
 
             if($gambar == ''){
                 DB::table('modul')->where('modulid',$request->id)->update([
@@ -112,7 +113,7 @@ class UploadController extends Controller
                 DB::table('modul')->where('modulid',$request->id)->update([
                     'title' => $request->title,
                     'deskripsi' => $request->deskripsi,
-                    'gambar' => $gambar
+                    'gambar' => $nama_file
                 ]);
             }
 

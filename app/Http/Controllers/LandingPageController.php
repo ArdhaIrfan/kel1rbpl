@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LandingPageController extends Controller
 {
     public function tampilkan()
     {
-        return view('landingpage.landingpage');
+        $modul = DB::table('modul')->get();
+
+        return view('landingpage.landingpage', ['modul'=>$modul]);
     }
 }

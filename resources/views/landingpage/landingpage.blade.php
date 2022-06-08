@@ -182,7 +182,17 @@
         </div>
 
         <div class="row col-12 mt-5 ">
-            <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+            @for ($i=0; $i<3; $i++)
+                <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+                    <img src="{{ url('gambar_modul/' . $modul[$i]->gambar) }}" class="card-img-top mx-0" alt="modul card">
+                    <div class="card-body bg-dark bg-gradient text-light">
+                        <h5 class="card-title">{{$modul[$i]->title}}</h5>
+                        <p class="card-text">{{ \Illuminate\Support\Str::limit($modul[$i]->deskripsi, 100, $end = '...') }}</p>
+                        <a href="/modul/video/{{$modul[$i]->modulid}}" class="stretched-link"></a>
+                    </div>
+                </div>
+            @endfor
+            {{-- <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                 <img src="{{ url('images/kitten.jpg') }}" class="card-img-top mx-0" alt="modul card">
                 <div class="card-body bg-dark bg-gradient text-light">
                     <h5 class="card-title">Card title</h5>
@@ -199,16 +209,7 @@
                         the card's content.</p>
                     <a href="#" class="stretched-link"></a>
                 </div>
-            </div>
-            <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                <img src="{{ url('images/kitten.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                <div class="card-body bg-dark bg-gradient text-light">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="text-center mt-4">
@@ -249,8 +250,8 @@
                             </p>
                         </div>
                         <div class="card-body text-center">
-                            <button class="btn btn-lg px-4 fw-bold btn-active"
-                                style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
+                            <a class="btn btn-lg px-4 fw-bold btn-active"
+                                style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/4">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -275,8 +276,8 @@
                             </p>
                         </div>
                         <div class="card-body text-center">
-                            <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
-                                Sekarang</button>
+                            <a class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/3">Beli
+                                Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -285,24 +286,24 @@
                         <div class="card-body">
                             <div class="text-center">
                                 <h3 class="card-title fw-bold">
-                                    6 Bulan
+                                    3 Bulan
                                 </h3>
                                 <small>
                                     <hr class="my-3">
                                 </small>
-                                <span class="h4 fw-bold">Rp50.000</span>/bulan
+                                <span class="h4 fw-bold">Rp58.000</span>/bulan
                                 <br>
-                                <span class="h6 text-warning">Hemat Rp90.000</span>
+                                <span class="h6 text-warning">Hemat Rp21.000</span>
                             </div>
                             <p class="card-text text-center pt-3 fw-bold text-secondary">
                                 <small>
-                                    * Pembayaran langsung 6 bulan di depan.
+                                    * Pembayaran langsung 3 bulan di depan.
                                 </small>
                             </p>
                         </div>
                         <div class="card-body text-center">
-                            <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
-                                Sekarang</button>
+                            <a class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/2">Beli
+                                Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -327,8 +328,8 @@
                             </p>
                         </div>
                         <div class="card-body text-center">
-                            <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
-                                Sekarang</button>
+                            <a class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/1">Beli
+                                Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -337,59 +338,4 @@
         </div>
     </div>
 
-    <div id="landing-testimoni" class="container mt-5 mb-5">
-        <div class="mb-4">
-            <h1 class="">
-                Apa Kata Mereka?
-            </h1>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-md-4">
-
-            </div>
-            <div id="carouselTestimoniIndicators" class="carousel slide col-md-4" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselTestimoniIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselTestimoniIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselTestimoniIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{ url('images/kitten.jpg') }}" alt="First slide"
-                            style="max-width: 100 !important;">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ url('images/kitten.jpg') }}" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 img-fluid" src="{{ url('images/kitten.jpg') }}" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselTestimoniIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselTestimoniIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <div class="col-md-4">
-
-            </div>
-        </div>
-    </div>
 @endsection
