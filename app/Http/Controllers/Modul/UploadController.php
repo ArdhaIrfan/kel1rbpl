@@ -32,7 +32,7 @@ class UploadController extends Controller
         }
 	}
 
-	public function tambahModul(Request $request){
+	public function inputModul(Request $request){
         if($this->checkAdmin()){
             $this->validate($request, [
                 'gambar' => 'required|file|mimes:jpeg,png,jpg|max:2048',

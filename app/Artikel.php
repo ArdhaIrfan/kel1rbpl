@@ -8,5 +8,5 @@ class Artikel extends Model
 {
     protected $table = "artikel";
 
-    protected $fillable = ['title', 'konten', 'gambar'];
+    protected $fillable = ['title', 'konten', 'gambar', 'pembuat'];
 }

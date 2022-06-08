@@ -97,8 +97,8 @@
 						<tr>
 							<td class="text-secondary">{{$a->title}}</td>
                             <td class="text-secondary">{{$a->konten}}</td>
-                            <td class="text-secondary"><img width="150px" src="{{ url('/images/'.$a->gambar) }}"></td>
-							<td class="text-secondary"><a class="btn btn-danger" href="/upload/hapus/{{ $a->artikelid }}">HAPUS</a></td>
+                            <td class="text-secondary"><img width="150px" src="{{ url('/gambar_artikel/'.$a->gambar) }}"></td>
+							<td class="text-secondary"><a class="btn btn-danger" href="/artikel/upload/hapus/{{ $a->artikelid }}">HAPUS</a></td>
 						</tr>
 						@endforeach
 					</tbody>

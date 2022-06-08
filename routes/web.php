@@ -32,7 +32,7 @@ Route::get('/landing', 'LandingPageController@tampilkan');
 Route::get('/modul/riwayat/hapus/{modulid}', 'Modul\RiwayatController@hapusRiwayat')->middleware('auth');
 
 Route::get('/modul/upload', 'Modul\UploadController@tampilkan')->middleware('auth');
-Route::post('/modul/upload/proses', 'Modul\UploadController@tambahModul')->middleware('auth');
+Route::post('/modul/upload/proses', 'Modul\UploadController@inputModul')->middleware('auth');
 Route::get('/modul/upload/hapus/{id}', 'Modul\UploadController@hapusModul')->middleware('auth');
 Route::get('/modul/upload/edit/{modulid}', 'Modul\UploadController@editModul')->middleware('auth');
 Route::post('/modul/upload/edit/proses', 'Modul\UploadController@updateModul')->middleware('auth');
@@ -43,7 +43,10 @@ Route::get('/modul/video/{modulid}/{videoid}', 'Modul\VideoController@tampilkanV
 Route::post('/modul/video/laporan', 'Modul\VideoController@simpanLaporan')->middleware('auth');
 
 Route::get('/artikel/upload', 'Artikel\UploadController@tampilkan')->middleware('auth');
+Route::post('/artikel/upload/proses', 'Artikel\UploadController@simpanArtikel')->middleware('auth');
+Route::get('/artikel/upload/hapus/{id}', 'Artikel\UploadController@hapusArtikel')->middleware('auth');
 
+Route::get('/profil/langganan/temp', 'Pengaturan\LanggananController@tampilkantemp');
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');

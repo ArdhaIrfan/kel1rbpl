@@ -84,11 +84,13 @@ nav-active
 
 
                         <div class="form-group row my-4">
-                            <div class="mb-3">
-                                <button type="submit" class="btn btn-yellow pl-4 pr-4 offset-md-5 offset-sm-1">
+                            <div class="col-md-1"></div>
+                            <div class="mb-3 col-md-10">
+                                <button type="submit" class="btn btn-yellow pl-4 pr-4">
                                     {{ __('Register Now') }}
                                 </button>
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
                     </form>
                 </div>
