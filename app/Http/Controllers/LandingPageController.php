@@ -9,7 +9,7 @@ class LandingPageController extends Controller
 {
     public function tampilkan()
     {
-        $modul = DB::table('modul')->get();
+        $modul = DB::table('modul')->limit(3)->get();
 
         return view('landingpage.landingpage', ['modul'=>$modul]);
     }

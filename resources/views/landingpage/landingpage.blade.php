@@ -182,16 +182,16 @@
         </div>
 
         <div class="row col-12 mt-5 ">
-            @for ($i=0; $i<3; $i++)
+            @foreach ($modul as $m)
                 <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('gambar_modul/' . $modul[$i]->gambar) }}" class="card-img-top mx-0" alt="modul card">
+                    <img src="{{ url('gambar_modul/' . $m->gambar) }}" class="card-img-top mx-0" alt="modul card">
                     <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">{{$modul[$i]->title}}</h5>
-                        <p class="card-text">{{ \Illuminate\Support\Str::limit($modul[$i]->deskripsi, 100, $end = '...') }}</p>
-                        <a href="/modul/video/{{$modul[$i]->modulid}}" class="stretched-link"></a>
+                        <h5 class="card-title">{{$m->title}}</h5>
+                        <p class="card-text">{{ \Illuminate\Support\Str::limit($m->deskripsi, 100, $end = '...') }}</p>
+                        <a href="/modul/video/{{$m->modulid}}" class="stretched-link"></a>
                     </div>
                 </div>
-            @endfor
+            @endforeach
             {{-- <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                 <img src="{{ url('images/kitten.jpg') }}" class="card-img-top mx-0" alt="modul card">
                 <div class="card-body bg-dark bg-gradient text-light">
