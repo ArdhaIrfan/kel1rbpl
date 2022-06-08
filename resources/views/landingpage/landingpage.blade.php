@@ -119,7 +119,7 @@
                 </p>
                 <p class="caption-2 mt-4">
                     <a href="https://www.instagram.com/ilmudewantara/" target="__blank"
-                        class="btn btn-lg btn-light txt-black rounded-50" role="button"> Belajar Gratis Sekarang </a>
+                        class="btn btn-lg txt-black rounded-50" role="button"> Belajar Gratis Sekarang </a>
                 </p>
             </div>
 
