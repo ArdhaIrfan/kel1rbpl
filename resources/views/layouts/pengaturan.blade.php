@@ -78,12 +78,16 @@
     color: #6C757D;
 }
 
-.date-time .nomor-telepon #tanggal-lahir input {
+.date-time .nomor-telepon #tanggal_lahir input {
     background-color: transparent;
     color: #6C757D;
 }
 
-#tanggal-lahir  {
+.form-control {
+    color: #6C757D;
+}
+
+#tanggal_lahir  {
     background-color: transparent;
     color: #6C757D;
 }
@@ -204,9 +208,9 @@
             <div class="row alingn-items-start">
                 <div class="column column1 border-end">
                     <div class="sidenav " id="myTab" role="tablist">
-                        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><img class="me-3" style="width: 20px" src="/gambar_modul/user.png" alt="" >Ubah Profil</a>
-                        <a href="/"><img class="me-3" style="width: 20px" src="/gambar_modul/langganan.png" alt=""><i class="fas fa-user-tie"></i>Langganan</a>
-                        <a href="/"><img class="me-3" style="width: 20px" src="/gambar_modul/settings.png" alt=""><i class="far fa-clipboard"></i>Settings</a>
+                        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="@yield('tab-ubah')"><img class="me-3" style="width: 20px" src="/gambar_modul/user.png" alt="" >Ubah Profil</a>
+                        <a href="/" class="@yield('tab-langganan')"><img class="me-3" style="width: 20px" src="/gambar_modul/langganan.png" alt=""><i class="fas fa-user-tie @yield('tab-langganan')"></i>Langganan</a>
+                        <a href="/" class="@yield('tab-setting')"><img class="me-3" style="width: 20px" src="/gambar_modul/settings.png" alt=""><i class="far fa-clipboard"></i>Settings</a>
                         {{-- <br> <br> <br> --}}
                       </div>
                 </div>

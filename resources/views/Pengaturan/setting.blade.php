@@ -9,10 +9,16 @@
   font-family: Ubuntu;
 }
 
+.bg-yellow {
+            background-color: #ffa500;
+        }
 
 </style>
 @endsection
 
+@section('tab-setting')
+bg-yellow
+@endsection
 
 @section('content')
 
