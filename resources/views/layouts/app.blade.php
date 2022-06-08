@@ -130,7 +130,7 @@
                                     <label for="newsletter1" class="visually-hidden">Message</label>
                                     <input id="newsletter1" type="text" class="form-control"
                                         placeholder="Leave a message">
-                                    <button class="btn btn-primary btn-outline-warning" type="button">Send</button>
+                                    <button class="btn text-bg-warning btn-outline-warning" type="button">Send</button>
                                 </div>
                             </form>
                         </div>
