@@ -9,12 +9,12 @@ use App\Http\Controllers\Controller;
 
 class UbahProfilController extends Controller
 {
-    public function tampilkan() {
+    public function display() {
         $userid = Auth::id();
         $profil = DB::table('users')-> where('id', $userid) -> first();
         return view('Pengaturan.ubah-profil', ['profil' => $profil]);
     }
-    public function simpan(Request $request) {
+    public function simpanDataDiri(Request $request) {
         $userid = Auth::id();
         DB::table('users')-> where('id', $userid)
         -> update ([

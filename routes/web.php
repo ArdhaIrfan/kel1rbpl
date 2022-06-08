@@ -52,10 +52,10 @@ Route::get('/profil/langganan/temp', 'Pengaturan\LanggananController@tampilkante
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
 
 // by Bashara
-Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@tampilkan');
+Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@display');
 Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan');
 Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan');
-Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpan')->middleware('auth');
+Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpanDataDiri')->middleware('auth');
 
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 
