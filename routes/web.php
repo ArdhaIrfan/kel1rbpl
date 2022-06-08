@@ -50,6 +50,8 @@ Route::get('/profil/langganan/temp', 'Pengaturan\LanggananController@tampilkante
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
+Route::get('/artikel/isi/{id}', 'Artikel\IsiController@tampilkan');
+
 
 // by Bashara
 Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@display');

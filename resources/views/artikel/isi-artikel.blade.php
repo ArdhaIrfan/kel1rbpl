@@ -43,10 +43,14 @@
 @endsection
 @section('content')
     <div class="container col-11 col-md-10 py-5">
-        <div class="column">
+    <div class="column">
+    @foreach ($artikel as $a)
+        {{-- <a href="/artikel/isi/{{$a->artikel}}"> --}}
             <div class="row">
                 <div class="col">
-                    <h1>Oprec Schematics 2021</h1>
+                    <h1>
+                        {{$a->title}}
+                    </h1>
                     <div class="row">
                         <div class="col-2">
                             <p>by Admin</p>
@@ -59,12 +63,15 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="{{url('images/orang-ngumpul.png')}}" alt="responsive image" class="my-2 img-fluid">
-                    <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum nulla commodi illo, repudiandae assumenda sunt expedita doloribus adipisci odio perferendis fugit possimus deserunt id soluta debitis dignissimos inventore amet.</p>
+                    <img src="{{url('gambar_artikel/'.$a->gambar)}}" alt="responsive image" class="my-3 img-fluid banner">
+                    <p class="card-text">{{$a->konten}}</p>
                 </div>
             </div>
+        {{-- </a> --}}
 
-            <div class="row mt-5">
+    @endforeach
+
+            {{-- <div class="row mt-5">
                 @foreach ($artikel as $a)
                     <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
                         <img src="{{url('gambar_modul/'.$a->gambar)}}" class="card-img-top mx-0" alt="modul card">
@@ -75,9 +82,9 @@
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div> --}}
 
-            {{ $artikel->links() }}
+            {{-- {{ $artikel->links() }} --}}
 
 
         </div>

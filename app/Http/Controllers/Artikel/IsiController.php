@@ -11,7 +11,9 @@ class IsiController extends Controller
     //by Ghif
     public function tampilkan($id) {
 
-        $artikel = DB::table('artikel')->paginate(6);
+        $artikel = DB::table('artikel')->where('artikelid', $id)->get();
         return view('artikel.isi-artikel', ['artikel' => $artikel]);
     }
+
+
 }

@@ -40,22 +40,19 @@
             }
         }
 
-        /* unvisited link */
-        a:link {
-            text-decoration: none;
-            color: white!important;
-        }
         a{
             text-decoration: none;
             color: white!important;
         }
+        a:link {
+            text-decoration: none;
+            color: white!important;
+        }
 
-        /* mouse over link */
         a:hover {
             text-decoration: none;
             color: rgb(231, 231, 231)!important;
         }
-
 
     </style>
 @endsection
@@ -74,10 +71,10 @@
                 </div>
             </div>
             @foreach ($artikel as $a)
-            <a   href="/artikel/isi/{{$a->artikelid}}" target="_blank">
+            <a href="/artikel/isi/{{$a->artikelid}}" >
             <div class="row">
                 <div class="col-lg-5">
-                    <img src="{{url('images/'.$a->gambar)}}" alt="responsive image" class="my-3 img-fluid banner">
+                    <img src="{{url('gambar_artikel/'.$a->gambar)}}" alt="responsive image" class="my-3 img-fluid banner">
 
                 </div>
                 <div class="col-lg-7">
@@ -99,14 +96,10 @@
                             <h6 style="font-weight: 10;">Tim Ilmu Dewantara</h6>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </a>
             @endforeach
-
-
 
             {{-- <div class="row">
                 <div class="col-lg-5">
@@ -182,12 +175,8 @@
 
             {{ $artikel->links() }}
 
-
         </div>
-
-
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
