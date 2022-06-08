@@ -8,17 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class VideoController extends Controller
 {
-    //by Ardha
-    public function tampilkan() {
-        // $modul = DB::table('absen')
-        // ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
-        // ->select('absen.*', 'pegawai.pegawai_nama')
-        // ->paginate();
-        return view('modul.video-modul');
-    }
-
     //by Arif
-    public function tampilkan_temp($modulid) {
+    public function tampilkan($modulid) {
         return redirect('/modul/video/'.$modulid.'/1');
     }
 
@@ -45,7 +36,19 @@ class VideoController extends Controller
         $video = $video_temp->first();
 
 
-        return view('modul.video-modul-copy', ['modul'=>$modul, 'video'=>$video, 'isVideoExist'=>$isVideoExist, 'listvideo'=>$listvideo]);
+        return view('modul.video-modul', ['modul'=>$modul, 'video'=>$video, 'isVideoExist'=>$isVideoExist, 'listvideo'=>$listvideo]);
+    }
+
+    public function simpanLaporan(Request $request){
+
+        DB::table('pelaporanmasalah')->insert([
+            'videoid' => $request->videoid,
+            'modulid' => $request->modulid,
+            'judul' => $request->judul,
+            'keluhan' => $request->keluhan
+        ]);
+
+        return redirect()->back();
     }
 
 }

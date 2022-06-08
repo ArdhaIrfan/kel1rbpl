@@ -47,15 +47,15 @@
         <form action="/modul/upload/edit/proses" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <input type="number" name="id" value="{{$modul->modulid}}" hidden>
-            <div>
+            <div class="form-group">
                 <b>Judul Modul</b>
                 <br>
-                <input type="text" name="title" value='{{$modul->title}}'>
+                <input type="text" name="title" value='{{$modul->title}}' required>
             </div>
             <br>
             <div class="form-group">
                 <b>Deskripsi</b>
-                <textarea class="form-control" name="deskripsi">{{$modul->deskripsi}}</textarea>
+                <textarea class="form-control" name="deskripsi" required>{{$modul->deskripsi}}</textarea>
             </div>
             <br>
             <div class="form-group">
@@ -98,8 +98,27 @@
                         </td>
                     </tr>
                     @endforeach
+
                 </tbody>
             </table>
         </div>
+        <form action="/modul/upload/edit/video/add" method="POST" enctype="multipart/form-data">
+            {{ csrf_field() }}
+                <input type="number" name="modulid" value="{{$modul->modulid}}" hidden>
+                <div class="form-group">
+                    <b>Judul Video</b>
+                    <br>
+                    <input type="text" name="title" placeholder="Judul Video" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <b>Link Video</b>
+                    <br>
+                    <input type="text" name="video" placeholder="eg:https://www.youtube.com/embed/DwTbTTxrjK8" width="100%" required>
+                </div>
+                <br>
+                <input type="submit" value="Tambah Video" class="btn btn-primary mb-5">
+            </tr>
+        </form>
     </div>
 @endsection
