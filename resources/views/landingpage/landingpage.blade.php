@@ -1,59 +1,110 @@
 @extends('layouts.app')
 
 @section('title')
-<title>Ilmu Dewantara</title>
+    <title>Ilmu Dewantara</title>
 @endsection
 
 @section('nav-home')
-nav-active
+    nav-active
 @endsection
 
 @section('landingcover')
-landing-background
+    landing-background
 @endsection
 
 @section('overlay')
-overlay
+    overlay
 @endsection
 
 @section('local_css')
     <style>
-        .banner {
-            width: 100%;
-            height: 50vh;
-            overflow: hidden;
-            object-fit: cover;
-            /* object-position: top; */
-        }
-
-        .card img {
+        .card.landing img {
             overflow: hidden;
             object-fit: cover;
         }
 
-        .card {
+        .card.landing {
             width: 31%;
             height: 270px;
         }
 
         @media (max-width: 991px) {
-            .card {
+            .card.landing {
                 width: 47%;
             }
         }
 
         @media (max-width: 767px) {
-            .card {
+            .card.landing {
                 width: 95%;
             }
         }
 
-        .txt-black{
-            color: #000000;
+        /* =================================== */
+
+        .container-fluid {
+            margin: 0;
+            padding: 5%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #0c0c0c 0%, #372f2f 100%);
+            font-family: 'Ubuntu', sans-serif;
         }
 
-        .rounded-50{
-            border-radius: 50px;
+        .card.subs {
+            border-top: 30px solid #ffd700;
+            padding: 10px 20px;
+            color: #f1f1f1;
+            background: #0c0c0c;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .card.subs {
+                padding: 10px 20px;
+            }
+        }
+
+        .active {
+            border-top: 30px solid #39c6f1;
+        }
+
+        .txt-active {
+            color: #39c6f1;
+        }
+
+        .card.subs::after {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card.subs:hover {
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            backface-visibility: hidden;
+            will-change: transform;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .75) !important;
+        }
+
+        .card.subs:hover::after {
+            opacity: 1;
+        }
+
+        .card.subs:hover .btn-outline-primary {
+            color: #f1f1f1;
+            background: #39c6f1;
+        }
+
+        .btn {
+            background: #ffd700;
+            color: #0c0c0c;
+        }
+
+        .btn-active {
+            color: #eee;
+            background: #39c6f1;
         }
     </style>
 @endsection
@@ -73,7 +124,8 @@ overlay
             </div>
 
             <div class="col-md-6 text-center mt-5 mx-auto">
-                <img class="" src="{{url('images/parallax.png')}}" style="height: 250; width: 100%; overflow: hidden; object-fit: cover;">
+                <img class="" src="{{ url('images/parallax.png') }}"
+                    style="height: 250; width: 100%; overflow: hidden; object-fit: cover;">
             </div>
         </div>
     </div>
@@ -81,7 +133,8 @@ overlay
 
     <div id="landing-overview" class="container row mx-auto mb-5">
         <div class="col-md-6 text-center mb-5 py-auto">
-            <img class="col-10 mx-auto" src="{{url('images/ide-ipad.png')}}" style="height: auto; width: 60%; overflow: hidden; object-fit: cover;">
+            <img class="col-10 mx-auto" src="{{ url('images/ide-ipad.png') }}"
+                style="height: auto; width: 60%; overflow: hidden; object-fit: cover;">
         </div>
 
         <div class="col-md-6">
@@ -129,8 +182,8 @@ overlay
         </div>
 
         <div class="row col-12 mt-5 ">
-            <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                <img src="{{url('images/kitten.jpg')}}" class="card-img-top mx-0" alt="modul card">
+            <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+                <img src="{{ url('images/kitten.jpg') }}" class="card-img-top mx-0" alt="modul card">
                 <div class="card-body bg-dark bg-gradient text-light">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -138,8 +191,8 @@ overlay
                     <a href="#" class="stretched-link"></a>
                 </div>
             </div>
-            <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                <img src="{{url('images/kitten.jpg')}}" class="card-img-top mx-0" alt="modul card">
+            <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+                <img src="{{ url('images/kitten.jpg') }}" class="card-img-top mx-0" alt="modul card">
                 <div class="card-body bg-dark bg-gradient text-light">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -147,8 +200,8 @@ overlay
                     <a href="#" class="stretched-link"></a>
                 </div>
             </div>
-            <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                <img src="{{url('images/kitten.jpg')}}" class="card-img-top mx-0" alt="modul card">
+            <div class="card landing col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+                <img src="{{ url('images/kitten.jpg') }}" class="card-img-top mx-0" alt="modul card">
                 <div class="card-body bg-dark bg-gradient text-light">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -164,8 +217,124 @@ overlay
 
     </div>
 
-    <div id="landing-subscription">
+    <div id="landing-subscription" class="container text-light col-11 col-md-10 mt-5 pt-5 pb-4">
+        <div class="column">
+            <div class="pb-4">
+                <h1><span class="text-warning">Jangan Takut</span> Uangmu Habis</h1>
+                <h6>Biaya yang IlmuDewantara tawarkan telah disesuaikan dengan uang saku mahasiswa <br>
+                    Tentu saja, kamu bisa mencoba <span class="text-warning">secara gratis</span>!
+                </h6>
+            </div>
 
+            <div class="row mt-5">
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="card subs shadow-lg active">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h3 class="card-title fw-bold">
+                                    12 Bulan
+                                </h3>
+                                <small>
+                                    <hr class="my-3">
+                                </small>
+                                <span class="h4 fw-bold">Rp45.000</span>/bulan
+                                <br>
+                                <span class="h6 txt-active txt-active">Hemat Rp240.000</span>
+                                <br>
+                            </div>
+                            <p class="card-text text-center pt-3 fw-bold text-secondary">
+                                <small>
+                                    * Pembayaran langsung 12 bulan di depan.
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <button class="btn btn-lg px-4 fw-bold btn-active"
+                                style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="card subs shadow-lg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h3 class="card-title fw-bold">
+                                    6 Bulan
+                                </h3>
+                                <small>
+                                    <hr class="my-3">
+                                </small>
+                                <span class="h4 fw-bold">Rp50.000</span>/bulan
+                                <br>
+                                <span class="h6 text-warning">Hemat Rp90.000</span>
+                            </div>
+                            <p class="card-text text-center pt-3 fw-bold text-secondary">
+                                <small>
+                                    * Pembayaran langsung 6 bulan di depan.
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
+                                Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="card subs shadow-lg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h3 class="card-title fw-bold">
+                                    6 Bulan
+                                </h3>
+                                <small>
+                                    <hr class="my-3">
+                                </small>
+                                <span class="h4 fw-bold">Rp50.000</span>/bulan
+                                <br>
+                                <span class="h6 text-warning">Hemat Rp90.000</span>
+                            </div>
+                            <p class="card-text text-center pt-3 fw-bold text-secondary">
+                                <small>
+                                    * Pembayaran langsung 6 bulan di depan.
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
+                                Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="card subs shadow-lg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h3 class="card-title fw-bold">
+                                    1 Bulan
+                                </h3>
+                                <small>
+                                    <hr class="my-3">
+                                </small>
+                                <span class="h4 fw-bold">Rp65.000</span>/bulan
+                                <br>
+                                <span class="h6 text-warning">Hemat Rp90.000</span>
+                            </div>
+                            <p class="card-text text-center pt-3 fw-bold text-secondary">
+                                <small>
+                                    <br><br>
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
+                                Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div id="landing-testimoni" class="container mt-5 mb-5">
@@ -181,47 +350,46 @@ overlay
             </div>
             <div id="carouselTestimoniIndicators" class="carousel slide col-md-4" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselTestimoniIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselTestimoniIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselTestimoniIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselTestimoniIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselTestimoniIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselTestimoniIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{url('images/kitten.jpg')}}" alt="First slide" style="max-width: 100 !important;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ url('images/kitten.jpg') }}" alt="First slide"
+                            style="max-width: 100 !important;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>...</h5>
+                            <p>...</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="{{url('images/kitten.jpg')}}" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ url('images/kitten.jpg') }}" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>...</h5>
+                            <p>...</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100 img-fluid" src="{{url('images/kitten.jpg')}}" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="{{ url('images/kitten.jpg') }}" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>...</h5>
+                            <p>...</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselTestimoniIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselTestimoniIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                 </a>
-              </div>
+            </div>
             <div class="col-md-4">
 
             </div>
         </div>
-
-
     </div>
 @endsection

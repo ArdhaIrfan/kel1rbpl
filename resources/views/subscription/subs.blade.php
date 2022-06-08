@@ -1,87 +1,200 @@
 @extends('layouts.app')
 
+@section('title')
+    <title>Subscription</title>
+@endsection
+
+@section('nav-subscription')
+    nav-active
+@endsection
+
 @section('local_css')
 <style>
-    body {
-        background-color: rgb(22, 22, 22);
-        font-family: 'Ubuntu', sans-serif;
-    }
-
-    .banner {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        object-fit: cover;
-        /* object-position: top; */
-    }
-
-    .card img {
-        overflow: hidden;
-        object-fit: cover;
-    }
-
-    .card {
-        width: 31%;
-        height: 270px;
-    }
-
-    @media (max-width: 991px) {
-        .card {
-            width: 47%;
+        .container-fluid {
+            margin: 0;
+            padding: 5%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #0c0c0c 0%, #372f2f 100%);
+            font-family: 'Ubuntu', sans-serif;
         }
-    }
 
-    @media (max-width: 767px) {
         .card {
-            width: 95%;
+            border-top: 30px solid #ffd700;
+            padding: 10px 20px;
+            color: #f1f1f1;
+            background: #0c0c0c;
         }
-    }
+
+        @media only screen and (max-width: 575px) {
+            .card {
+                padding: 10px 20px;
+            }
+        }
+
+        .active {
+            border-top: 30px solid #39c6f1;
+        }
+
+        .txt-active {
+            color: #39c6f1;
+        }
+
+        .card::after {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card:hover {
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            backface-visibility: hidden;
+            will-change: transform;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .75) !important;
+        }
+
+        .card:hover::after {
+            opacity: 1;
+        }
+
+        .card:hover .btn-outline-primary {
+            color: #f1f1f1;
+            background: #39c6f1;
+        }
+
+        .btn {
+            background: #ffd700;
+            color: #0c0c0c;
+        }
+
+        .btn-active {
+            color: #eee;
+            background: #39c6f1;
+        }
 </style>
 @endsection
 
 @section('content')
-<div class="container text-light col-11 col-md-10 py-5">
+<div class="container text-light col-11 col-md-10 pt-5 pb-4">
     <div class="column">
-        <div>
+        <div class="pb-4">
             <h1><span class="text-warning">Jangan Takut</span> Uangmu Habis</h1>
             <h6>Biaya yang IlmuDewantara tawarkan telah disesuaikan dengan uang saku mahasiswa <br>
             Tentu saja, kamu bisa mencoba <span class="text-warning">secara gratis</span>!
             </h6>
         </div>
-        
-        <div class="row mt-5 text-center">
-            <div class="col md-3 text-center">
-                <h2> 12 Bulan </h2>
-                __
-                <br><br>
-                <h5>Rp45.000</h5><p>/Bulan</p>
-                <p><span style="text-primary">Hemat Rp240.000</span></p>
-                <br><a href="/subscription/metode"><button class="btn btn-primary">Beli Sekarang</button></a>
+
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-lg active">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 class="card-title fw-bold">
+                                12 Bulan
+                            </h3>
+                            <small>
+                                <hr class="my-3">
+                            </small>
+                            <span class="h4 fw-bold">Rp45.000</span>/bulan
+                            <br>
+                            <span class="h6 txt-active txt-active">Hemat Rp240.000</span>
+                            <br>
+                        </div>
+                        <p class="card-text text-center pt-3 fw-bold text-secondary">
+                            <small>
+                                * Pembayaran langsung 12 bulan di depan.
+                            </small>
+                        </p>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="btn btn-lg px-4 fw-bold btn-active"
+                            style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
+                    </div>
+                </div>
             </div>
-            <div class="col md-3 text-center">
-            <h2> 6 Bulan </h2>
-                __
-                <br><br>
-                <h5>Rp50.000</h5><p>/Bulan</p>
-                <p><span style="text-warning">Hemat Rp90.000</span></p>
-                <br><a href="/subscription/metode"><button class="btn btn-warning">Beli Sekarang</button></a>
+            <div class="col-12 col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 class="card-title fw-bold">
+                                6 Bulan
+                            </h3>
+                            <small>
+                                <hr class="my-3">
+                            </small>
+                            <span class="h4 fw-bold">Rp50.000</span>/bulan
+                            <br>
+                            <span class="h6 text-warning">Hemat Rp90.000</span>
+                        </div>
+                        <p class="card-text text-center pt-3 fw-bold text-secondary">
+                            <small>
+                                * Pembayaran langsung 6 bulan di depan.
+                            </small>
+                        </p>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
+                            Sekarang</button>
+                    </div>
+                </div>
             </div>
-            <div class="col md-3 text-center">
-            <h2> 3 Bulan </h2>
-                __
-                <br><br>
-                <h5>Rp58.000</h5><p>/Bulan</p>
-                <p><span style="text-warning">Hemat Rp21.000</span></p>
-                <br><a href="/subscription/metode"><button class="btn btn-warning">Beli Sekarang</button></a>
+            <div class="col-12 col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 class="card-title fw-bold">
+                                6 Bulan
+                            </h3>
+                            <small>
+                                <hr class="my-3">
+                            </small>
+                            <span class="h4 fw-bold">Rp50.000</span>/bulan
+                            <br>
+                            <span class="h6 text-warning">Hemat Rp90.000</span>
+                        </div>
+                        <p class="card-text text-center pt-3 fw-bold text-secondary">
+                            <small>
+                                * Pembayaran langsung 6 bulan di depan.
+                            </small>
+                        </p>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
+                            Sekarang</button>
+                    </div>
+                </div>
             </div>
-            <div class="col md-3 text-center">
-            <h2> 1 Bulan </h2>
-                __
-                <br><br>
-                <h5>Rp65.000</h5><p>/Bulan</p><br>
-                <br><a href="/subscription/metode"><button class="btn btn-warning">Beli Sekarang</button></a>
+            <div class="col-12 col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 class="card-title fw-bold">
+                                1 Bulan
+                            </h3>
+                            <small>
+                                <hr class="my-3">
+                            </small>
+                            <span class="h4 fw-bold">Rp65.000</span>/bulan
+                            <br>
+                            <span class="h6 text-warning">Hemat Rp90.000</span>
+                        </div>
+                        <p class="card-text text-center pt-3 fw-bold text-secondary">
+                            <small>
+                                <br><br>
+                            </small>
+                        </p>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="btn btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli
+                            Sekarang</button>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 

@@ -10,10 +10,6 @@
 
 @section('local_css')
     <style>
-        body {
-            background-color: rgb(22, 22, 22);
-        }
-
         .banner {
             width: 100%;
             height: 50vh;
