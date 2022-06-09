@@ -89,10 +89,10 @@
 
                                     <div class="dropdown-menu dropdown-menu-right bg-dark"
                                         aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item nav-link-white" href="#">
+                                        <a class="dropdown-item nav-link-white" href="/modul/riwayat">
                                             Riwayat
                                         </a>
-                                        <a class="dropdown-item nav-link-white" href="#">
+                                        <a class="dropdown-item nav-link-white" href="/profil/ubah">
                                             Profil
                                         </a>
                                         <a class="dropdown-item nav-link-white" href="{{ route('logout') }}" onclick="event.preventDefault();
