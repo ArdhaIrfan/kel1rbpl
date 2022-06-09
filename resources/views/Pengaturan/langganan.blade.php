@@ -103,7 +103,7 @@ body {
   height: 24px;
 }
 ::-webkit-scrollbar-track {
-  background: #FBAD1C;
+  /* background: #FBAD1C; */
 }
 ::-webkit-scrollbar-thumb {
   background: #FBAD1C url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42863/grab.png) center no-repeat;
@@ -116,13 +116,13 @@ body {
   display: block;
   height: 34px;
   width: 34px;
-  background: #FBAD1C;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42863/arrow2.png);
-  background-size: 100%;
+  /* background: #FBAD1C; */
+  /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42863/arrow2.png);
+  background-size: 100%; */
 }
-::-webkit-scrollbar-button:end:increment {
+/* ::-webkit-scrollbar-button:end:increment {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42863/arrow.png);
-}
+} */
 
 
 /** Alert Box **/
@@ -214,6 +214,20 @@ body {
     color: #eee;
     background: #39c6f1;
   }
+
+  .scroll {
+    background-color: #1C1E1F;
+    border: 1px solid black;
+    height: 360px;
+    width: 800px;
+    overflow-x: scroll;
+    margin-left: 20px;
+    overflow-y: hidden;
+  }
+
+  .scroll-x {
+      width: 1500px;
+  }
     </style>
     @endsection
 
@@ -225,70 +239,152 @@ body {
 
     <h2 class="ps-3">Ubah Profil</h2>
 
-  <div class="slider">
-    <div class="slider-buttons">
-      <a href="#slide-1">1</a>
-      <a href="#slide-2">2</a>
-      <a href="#slide-3">3</a>
-      <a href="#slide-4">4</a>
-    </div>
-    <div class="slides">
-      <div class="slide" id="slide-1">
-
-{{-- content pertama --}}
-            <div class="col-lg-6">
-
-            <div class="card h-100 shadow-lg active">
-              <div class="card-body">
-                <div class="text-center p-3">
-                  <h3 class="card-title fw-bold">
-                      12 Bulan
-                  </h3>
-                  <small>
-                      <hr class="my-3">
-                  </small>
-                  <span class="h4 fw-bold">Rp45.000</span>/bulan
-                  <br>
-                  <span class="h6 txt-active txt-active">Hemat Rp240.000</span>
-                  <br>
+    <div class="mt-5 scroll">
+        <div class="row scroll-x">
+        <div class=" col-3 mb-4">
+            <div class="card shadow-lg active">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h3 class="card-title fw-bold">
+                            12 Bulan
+                        </h3>
+                        <small>
+                            <hr class="my-3">
+                        </small>
+                        <span class="h4 fw-bold">Rp45.000</span>/bulan
+                        <br>
+                        <span class="h6 txt-active txt-active">Hemat Rp240.000</span>
+                        <br>
+                    </div>
+                    <p class="card-text text-center pt-3 fw-bold text-secondary">
+                        <small>
+                            * Pembayaran langsung 12 bulan di depan.
+                        </small>
+                    </p>
                 </div>
-                <p class="card-text text-center pt-3 fw-bold text-muted">
-                    <small>
-                        * Pembayaran langsung 12 bulan di depan.
-                    </small>
-                </p>
-              </div>
-              <div class="card-body text-center">
-                <button class="btn btn-outline-primary btn-lg px-4 fw-bold btn-active" style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
-              </div>
+                <div class="card-body text-center">
+                    <a class="btn btn-lg px-4 fw-bold btn-active"
+                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/4">Beli Sekarang
+                    </a>
+                </div>
             </div>
-          </div>
-
-
-      </div>
-      <div class="slide" id="slide-2">
-        <p>This is the second slide. Alternatively, change slides using the buttons at the top.</p>
-      </div>
-      <div class="slide" id="slide-3">
-        <p>This is the third slide. You're getting the hang of it.</p>
-      </div>
-      <div class="slide" id="slide-4">
-        <p>This is the last slide. Scroll back to the left if you're into that stuff.</p>
-      </div>
+        </div>
+        <div class=" col-3 mb-4">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h3 class="card-title fw-bold">
+                            6 Bulan
+                        </h3>
+                        <small>
+                            <hr class="my-3">
+                        </small>
+                        <span class="h4 fw-bold">Rp50.000</span>/bulan
+                        <br>
+                        <span class="h6 text-warning">Hemat Rp90.000</span>
+                    </div>
+                    <p class="card-text text-center pt-3 fw-bold text-secondary">
+                        <small>
+                            * Pembayaran langsung 6 bulan di depan.
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body text-center">
+                    <a class="btn btn-lg px-4 fw-bold btn-active"
+                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/3">Beli Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class=" col-3 mb-4">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h3 class="card-title fw-bold">
+                            3 Bulan
+                        </h3>
+                        <small>
+                            <hr class="my-3">
+                        </small>
+                        <span class="h4 fw-bold">Rp58.000</span>/bulan
+                        <br>
+                        <span class="h6 text-warning">Hemat Rp21.000</span>
+                    </div>
+                    <p class="card-text text-center pt-3 fw-bold text-secondary">
+                        <small>
+                            * Pembayaran langsung 3 bulan di depan.
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body text-center">
+                    <a class="btn btn-lg px-4 fw-bold btn-active"
+                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/2">Beli Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-4">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h3 class="card-title fw-bold">
+                            1 Bulan
+                        </h3>
+                        <small>
+                            <hr class="my-3">
+                        </small>
+                        <span class="h4 fw-bold">Rp65.000</span>/bulan
+                        <br>
+                        <span class="h6 text-warning">Hemat Rp90.000</span>
+                    </div>
+                    <p class="card-text text-center pt-3 fw-bold text-secondary">
+                        <small>
+                            <br><br>
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body text-center">
+                    <a class="btn btn-lg px-4 fw-bold btn-active"
+                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/1">Beli Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    </div>
 
   <div>
-      <h3>Status Berlangganan</h3>
+      <div class="row">
+      Status Berlangganan
+      <div class="text-warning col ">
+        @if ($active == 1)
+        active
+        @else not active
+      @endif
+    </div>
+    </div>
       <p>Jenis Langganan</p>
+      <div class="text-warning">
+        @if ($active == 1)
+        {{$bulan}} bulan
+      @endif
+    </div>
       <p>Aktif Mulai</p>
+      @if ($active == 1)
+      {{$langganan -> start}}
+    @endif
       <p>Aktif Hingga</p>
+      @if ($active == 1)
+      {{$langganan -> end}} bulan
+    @endif
   </div>
 
   <div>
     <h3>Riwayat Transaksi</h3>
-    <p>Paket Berlangganan Tahunan</p>
-    <p>Paket Berlangganan Bulanan</p>
+    @foreach ($riwayat as $r)
+    {{$r -> bulan}}
+    {{$r -> hargaperbulan * $r -> bulan}}
+    @endforeach
 </div>
 
     @endsection
@@ -296,7 +392,7 @@ body {
 
 
 
-    <body>
+    {{-- <body>
     <div class="container-fluid">
       <div class="container p-5">
         <div class="row">
@@ -371,7 +467,7 @@ body {
           </div>
         </div>
       </div>
-    </body>
+    </body> --}}
 
     <!-- Bootstrap 5 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

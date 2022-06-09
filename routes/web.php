@@ -53,10 +53,19 @@ Route::get('/artikel/isi/{id}', 'Artikel\IsiController@tampilkan');
 
 
 // by Bashara
+<<<<<<< Updated upstream
 Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@display');
 Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan');
 Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan');
 Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpanDataDiri')->middleware('auth');
+=======
+Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@tampilkan')->middleware('auth');
+Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan')->middleware('auth');
+Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan')->middleware('auth');
+Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpan')->middleware('auth');
+Route::get('/logout', 'Pengaturan\SettingController@logout')->middleware('auth');
+Route::get('/delete', 'Pengaturan\SettingController@deleteAccount')->middleware('auth');
+>>>>>>> Stashed changes
 
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 
