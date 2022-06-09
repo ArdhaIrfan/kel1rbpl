@@ -71,10 +71,6 @@ body {
   margin: 0;
   white-space: normal;
 }
-.slider #slide-1 {background: #afa;}
-.slider #slide-2 {background: #ffa;}
-.slider #slide-3 {background: #faa;}
-.slider #slide-4 {background: #aff;}
 
 .slider-buttons {
   position: absolute;
@@ -116,13 +112,7 @@ body {
   display: block;
   height: 34px;
   width: 34px;
-  /* background: #FBAD1C; */
-  /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42863/arrow2.png);
-  background-size: 100%; */
 }
-/* ::-webkit-scrollbar-button:end:increment {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42863/arrow.png);
-} */
 
 
 /** Alert Box **/
@@ -216,8 +206,7 @@ body {
   }
 
   .scroll {
-    background-color: #1C1E1F;
-    border: 1px solid black;
+    background-color: transparent;
     height: 360px;
     width: 800px;
     overflow-x: scroll;
