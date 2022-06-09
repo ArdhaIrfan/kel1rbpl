@@ -266,7 +266,7 @@ body {
                 </div>
                 <div class="card-body text-center">
                     <a class="btn btn-lg px-4 fw-bold btn-active"
-                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/4">Beli Sekarang
+                        style="border-radius:5px; font-size: 1rem; color:black;" href="/subscription/metode/4">Beli Sekarang
                     </a>
                 </div>
             </div>
@@ -293,7 +293,7 @@ body {
                 </div>
                 <div class="card-body text-center">
                     <a class="btn btn-lg px-4 fw-bold btn-active"
-                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/3">Beli Sekarang
+                        style="border-radius:5px; font-size: 1rem; color:black;" href="/subscription/metode/3">Beli Sekarang
                     </a>
                 </div>
             </div>
@@ -320,7 +320,7 @@ body {
                 </div>
                 <div class="card-body text-center">
                     <a class="btn btn-lg px-4 fw-bold btn-active"
-                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/2">Beli Sekarang
+                        style="border-radius:5px; font-size: 1rem; color:black;" href="/subscription/metode/2">Beli Sekarang
                     </a>
                 </div>
             </div>
@@ -347,7 +347,7 @@ body {
                 </div>
                 <div class="card-body text-center">
                     <a class="btn btn-lg px-4 fw-bold btn-active"
-                        style="border-radius:5px; font-size: 1rem;" href="/subscription/metode/1">Beli Sekarang
+                        style="border-radius:5px; font-size: 1rem;  color:black;" href="/subscription/metode/1">Beli Sekarang
                     </a>
                 </div>
             </div>

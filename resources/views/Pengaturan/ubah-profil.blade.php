@@ -28,7 +28,7 @@ bg-yellow
             alt="">
         <div>
             <input id='image' type='file' name='image' onchange="loadFile(event)" hidden>
-            <button class="btn text-white mb-2 btn-warning" id='buttonid'> <img src="/gambar_modul/pensil.png" alt="">
+            <button class="btn text-white mb-2 btn-warning rounded-5" id='buttonid'> <img src="/gambar_modul/pensil.png" alt="">
             </button>
         </div>
     </div>
@@ -75,7 +75,7 @@ bg-yellow
                 </div>
                 <br>
                 <div align="center">
-                    <input type="submit" value="Simpan Data" id="btn" class="btn btn-warning btn-lg">
+                    <input type="submit" value="Simpan" id="btn" class="btn btn-warning btn-lg rounded-5">
                 </div>
             </div>
         </form>
@@ -95,21 +95,4 @@ bg-yellow
 </script>
 
 @endsection
-
-{{-- <script>
-    document.getElementById('buttonid').addEventListener('click', openDialog);
-
-    function openDialog() {
-    document.getElementById('image').click();
-    }
-
-    let loadFile = function(e) {
-        let image = document.getElementById('img-preview');
-        image.src = URL.createObjectURL(e.target.files[0]);
-    }
-</script> --}}
-
-
-    {{-- <script src="/js/changepic.js"></script> --}}
-    {{-- <script src="{{ URL::asset('js/changepic.js')}}"></script> --}}
 

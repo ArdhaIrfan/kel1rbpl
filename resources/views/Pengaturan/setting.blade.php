@@ -14,6 +14,8 @@
     border-color: white;
 }
 
+
+
 .bg-yellow {
             background-color: #ffa500;
         }
@@ -38,7 +40,7 @@ bg-yellow
             <div class="col my-3">
                 {{$email}}
             </div>
-            <div class="col my-3 text-end text-warning"><a href="/profil/ganti-password" style="color:#FFC107">Ganti Password</a></div>
+            <div class="col my-3 text-end text-warning"><a href="/profil/ganti-password" style="color:#FFC107; text-decoration:none;">Ganti Password</a></div>
             <hr>
         </div>
         <div class="row">
@@ -56,7 +58,7 @@ bg-yellow
 <div class="row">
     <br>
     <div class="col" align="right">
-        <a id="logout" href="/logout/" class="btn btn-warning btn-lg">Logout</a>
+        <a id="logout" href="/logout/" class="btn btn-warning btn-lg text-white rounded-5">Logout</a>
     </div>
   <div class="col" align="right">
     <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
