@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //ModulController by Ardha
 Route::get('/modul/list', 'Modul\ListController@tampilkan');
 Route::get('/modul/riwayat', 'Modul\RiwayatController@tampilkan')->middleware('auth');
-Route::get('/modul/video/{modulid}', 'Modul\VideoController@tampilkan')->middleware('auth');
+Route::get('/modul/video/{modulid}', 'Modul\VideoController@tampilkanModul')->middleware('auth');
 
 // by Arif
 Route::get('/landing', 'LandingPageController@tampilkan');

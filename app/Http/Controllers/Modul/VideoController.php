@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class VideoController extends Controller
 {
     //by Arif
-    public function tampilkan($modulid) {
+    public function tampilkanModul($modulid) {
         return redirect('/modul/video/'.$modulid.'/1');
     }
 
