@@ -229,6 +229,8 @@ body {
       width: 1500px;
   }
     </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     @endsection
 
     @section('tab-langganan')
@@ -353,122 +355,59 @@ body {
     </div>
     </div>
 
-  <div>
-      <div class="row">
+  <div class="my-3">
+      <div class="row ps-4 my-2">
       Status Berlangganan
-      <div class="text-warning col ">
+      <div class="text-warning col">
         @if ($active == 1)
-        active
-        @else not active
+        AKTIF
+        @else TIDAK AKTIF
       @endif
     </div>
     </div>
-      <p>Jenis Langganan</p>
-      <div class="text-warning">
+    <div class="row ps-4 my-2">
+      Jenis Langganan
+      <div class=" col">
         @if ($active == 1)
         {{$bulan}} bulan
       @endif
     </div>
-      <p>Aktif Mulai</p>
+    </div>
+    <div class="row ps-3 my-2">
+        <div class="col">
+      Aktif Mulai:
       @if ($active == 1)
       {{$langganan -> start}}
     @endif
-      <p>Aktif Hingga</p>
+</div>
+<div class="row my-2">
+<div class="col">
+      Aktif Hingga:
       @if ($active == 1)
-      {{$langganan -> end}} bulan
+      {{$langganan -> end}}
     @endif
   </div>
+</div>
+</div>
+</div>
 
   <div>
     <h3>Riwayat Transaksi</h3>
+    <div class="row">
+        <div class="col">
+            Paket Berlangganan Tahunan (
     @foreach ($riwayat as $r)
     {{$r -> bulan}}
+    @endforeach
+           bulan )
+</div>
+<div class="col">
+    Rp
+    @foreach ($riwayat as $r)
     {{$r -> hargaperbulan * $r -> bulan}}
     @endforeach
 </div>
-
+</div>
+</div>
     @endsection
-
-
-
-
-    {{-- <body>
-    <div class="container-fluid">
-      <div class="container p-5">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card h-100 shadow-lg">
-              <div class="card-body">
-                <div class="text-center p-3">
-                  <h3 class="card-title fw-bold">
-                      6 Bulan
-                  </h3>
-                  <small>
-                      <hr class="my-3">
-                  </small>
-                  <span class="h4 fw-bold">Rp50.000</span>/bulan
-                  <br>
-                  <span class="h6 text-warning">Hemat Rp90.000</span>
-                </div>
-                <p class="card-text text-center pt-3 fw-bold text-muted">
-                    <small>
-                        * Pembayaran langsung 6 bulan di depan.
-                    </small>
-                </p>
-              </div>
-              <div class="card-body text-center">
-                <button class="btn btn-outline-primary btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card h-100 shadow-lg">
-              <div class="card-body">
-                <div class="text-center p-3">
-                  <h3 class="card-title fw-bold">
-                      6 Bulan
-                  </h3>
-                  <small>
-                      <hr class="my-3">
-                  </small>
-                  <span class="h4 fw-bold">Rp50.000</span>/bulan
-                  <br>
-                  <span class="h6 text-warning">Hemat Rp90.000</span>
-                </div>
-                <p class="card-text text-center pt-3 fw-bold text-muted">
-                    <small>
-                        * Pembayaran langsung 6 bulan di depan.
-                    </small>
-                </p>
-              </div>
-              <div class="card-body text-center">
-                <button class="btn btn-outline-primary btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card h-100 shadow-lg">
-              <div class="card-body">
-                <div class="text-center p-3">
-                  <h3 class="card-title fw-bold">
-                      1 Bulan
-                  </h3>
-                  <small>
-                      <hr class="mt-3 mb-5">
-                  </small>
-                  <span class="h4 fw-bold">Rp65.000</span>/bulan
-                  <br>
-                </div>
-              </div>
-              <div class="card-body text-center">
-                <button class="btn btn-outline-primary btn-lg px-4 fw-bold" style="border-radius:5px; font-size: 1rem;">Beli Sekarang</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </body> --}}
-
-    <!-- Bootstrap 5 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </html>

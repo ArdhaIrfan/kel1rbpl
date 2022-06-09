@@ -38,7 +38,7 @@ bg-yellow
             <div class="col my-3">
                 {{$email}}
             </div>
-            <div class="col my-3 text-end text-warning"> Ganti Password</div>
+            <div class="col my-3 text-end text-warning"><a href="/profil/ganti-password" style="color:#FFC107">Ganti Password</a></div>
             <hr>
         </div>
         <div class="row">
@@ -53,11 +53,14 @@ bg-yellow
   </div>
   </div>
   <br>
-  <div align="right">
+<div class="row">
+    <br>
+    <div class="col" align="right">
+        <a id="logout" href="/logout/" class="btn btn-warning btn-lg">Logout</a>
+    </div>
+  <div class="col" align="right">
     <a id="delete" href="/delete/" class="btn btn-warning btn-lg">delete</a>
 </div>
-  <div align="center">
-    <a id="logout" href="/logout/" class="btn btn-warning btn-lg">Logout</a>
 </div>
 
 
