@@ -8,6 +8,11 @@
   box-sizing: border-box;
   font-family: Ubuntu;
 }
+#colorstrip{
+    width: 100%; height: 2px;
+    border-style: solid;
+    border-color: white;
+}
 
 .bg-yellow {
             background-color: #ffa500;
@@ -24,24 +29,35 @@ bg-yellow
 
 <h2 class="ps-3 border-bottom">Account</h2>
 
-<div class="row align-items-start">
-    <div class="col column3" id="column3">
+<div class="row align-items-start mt-4">
+    <div class="col-sm-4">
         <h5>Membership & Billing</h5>
     </div>
-    <div class="col column4">
-        <div class="border-bottom">
-        <h6>Email@gmail.com</h6> {{-- database nanti--}}
-        <p>Password: </p>
-    </div>
-    <div class="border-bottom">
-        <h6>Nomor Pembayaran</h6> {{-- database nanti--}}
-        <p>Password: </p>
-    </div>
+    <div class="col-sm">
+        <div class="row">
+            <div class="col my-3">
+                {{$email}}
+            </div>
+            <div class="col my-3 text-end text-warning"> Ganti Password</div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="my-3">
+            Your next billing date is
+            @if ($active == 1)
+                {{$langganan}}
+            @endif
+            </div>
+            <hr>
+        </div>
   </div>
   </div>
   <br>
+  <div align="right">
+    <a id="delete" href="/delete/" class="btn btn-warning btn-lg">delete</a>
+</div>
   <div align="center">
-    <input type="submit" value="Simpan Data" id="btn" class="btn btn-warning btn-lg">
+    <a id="logout" href="/logout/" class="btn btn-warning btn-lg">Logout</a>
 </div>
 
 
