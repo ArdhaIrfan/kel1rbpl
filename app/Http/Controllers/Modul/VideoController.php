@@ -35,8 +35,10 @@ class VideoController extends Controller
 
         $video = $video_temp->first();
 
+        $artikel = DB::table('artikel')->limit(6)->get();
 
-        return view('modul.video-modul', ['modul'=>$modul, 'video'=>$video, 'isVideoExist'=>$isVideoExist, 'listvideo'=>$listvideo]);
+
+        return view('modul.video-modul', ['modul'=>$modul, 'video'=>$video, 'isVideoExist'=>$isVideoExist, 'listvideo'=>$listvideo, 'artikel'=>$artikel]);
     }
 
     public function ambilVideo($modulid, $videoid){

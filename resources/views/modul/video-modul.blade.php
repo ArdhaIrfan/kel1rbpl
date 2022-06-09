@@ -209,66 +209,17 @@
                 </div>
             </div>
             <div class="row justify-content-between mt-5">
-                <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                    <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="stretched-link"></a>
+                @foreach ($artikel as $a)
+                    <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
+                        <img src="{{ url('gambar_artikel/'.$a->gambar) }}" class="card-img-top mx-0" alt="modul card">
+                        <div class="card-body bg-dark bg-gradient text-light">
+                            <h5 class="card-title">{{$a->title}}</h5>
+                            <p class="card-text">{{ \Illuminate\Support\Str::limit($a->konten, 100, $end='...') }}</p>
+                            <a href="/artikel/isi/{{$a->artikelid}}" class="stretched-link"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                    <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                    <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                    <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                    <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="card col-12 col-sm-6 col-md-4 m-2 px-0 border-0">
-                    <img src="{{ url('images/kitten2.jpg') }}" class="card-img-top mx-0" alt="modul card">
-                    <div class="card-body bg-dark bg-gradient text-light">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </div>

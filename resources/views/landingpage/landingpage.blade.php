@@ -118,7 +118,7 @@
                     Temukan rahasia sukses perkuliahanmu di bidang nonakademik dengan mudah
                 </p>
                 <p class="caption-2 mt-4">
-                    <a href="https://www.instagram.com/ilmudewantara/" target="__blank"
+                    <a href="#landing-subscription"
                         class="btn btn-lg txt-black rounded-50" role="button"> Belajar Gratis Sekarang </a>
                 </p>
             </div>
@@ -213,7 +213,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <a class="text-warning" href="">Lihat Modul Lainnya</a>
+            <a class="text-warning" href="/modul/list">Lihat Modul Lainnya</a>
         </div>
 
     </div>
