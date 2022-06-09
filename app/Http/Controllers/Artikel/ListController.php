@@ -14,4 +14,16 @@ class ListController extends Controller
         $artikel = DB::table('artikel')->paginate(6);
         return view('artikel.list-artikel', ['artikel' => $artikel]);
     }
+
+    public function pencarian(Request $request){
+
+        $cari = $request->cari;
+
+        $hasil = DB::table('artikel')
+		->where('title','like',"%".$cari."%")
+        ->orWhere('konten','like',"%".$cari."%")
+		->paginate(6);
+
+        return view('artikel.list-artikel', ['artikel' => $hasil]);
+    }
 }

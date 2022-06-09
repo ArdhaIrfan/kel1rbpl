@@ -53,6 +53,7 @@ Route::post('/profil/ganti-password/save', 'Auth\GantiPasswordController@save')-
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
 Route::get('/artikel/isi/{id}', 'Artikel\IsiController@tampilkan');
+Route::get('/artikel/cari','Artikel\ListController@pencarian');
 
 
 // by Bashara
