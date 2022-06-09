@@ -60,7 +60,7 @@ Route::get('/artikel/cari','Artikel\ListController@pencarian');
 Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@tampilkan')->middleware('auth');
 Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan')->middleware('auth');
 Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan')->middleware('auth');
-Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpan')->middleware('auth');
+Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpanDataDiri')->middleware('auth');
 Route::get('/logout', 'Pengaturan\SettingController@logout')->middleware('auth');
 Route::get('/delete', 'Pengaturan\SettingController@deleteAccount')->middleware('auth');
 

@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div>
-                <img src="{{ url('images/kitten.jpg') }}" alt="banner" class="my-3 img-fluid banner">
+                <img src="{{ url('images/bannermodul.png') }}" alt="banner" class="my-3 img-fluid banner">
             </div>
 
             <div class="row mt-5">
