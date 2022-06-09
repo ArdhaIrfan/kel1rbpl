@@ -44,8 +44,9 @@ class UploadController extends Controller
             $gambar = $request->file('gambar');
 
             $nama_file = $request->title.".".$gambar->getClientOriginalName();
+            $nama_file = str_replace(" ", "", $nama_file);
 
-                      // isi dengan nama folder tempat kemana file diupload
+            // isi dengan nama folder tempat kemana file diupload
             $tujuan_upload = 'gambar_modul';
             $gambar->move($tujuan_upload,$nama_file);
 
@@ -106,7 +107,9 @@ class UploadController extends Controller
             } else {
                 FacadesFile::delete('gambar_modul/'.$modul->gambar);
 
-                $nama_file = $request->title.".".$gambar->getClientOriginalName();
+                $nama_file = $request->id.".".$gambar->getClientOriginalName();
+                $nama_file = str_replace(" ", "", $nama_file);
+
                 $tujuan_upload = 'gambar_modul';
                 $gambar->move($tujuan_upload,$nama_file);
 

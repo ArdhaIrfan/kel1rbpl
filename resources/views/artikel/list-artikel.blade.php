@@ -63,12 +63,13 @@
                 <img style="max-width: 20%; " src="{{url('images/logo-ide-navbar.png')}}" alt="responsive image" class="rounded float-left">
                 <h1 style="font-weight: 1000; font-size: 70px">Artikel</h1>
             </div>
-            <div class="d-flex col-12">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Community"
-                        aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
-                </div>
+            <div class="col-12 mb-3">
+                <form action="/artikel/cari" method="GET" class="d-flex" style="width: 100%;">
+
+                    <input type="text" name="cari" class="form-control rounded-0 rounded-start " placeholder="Search Community"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <button class="btn text-bg-secondary btn-outline-secondary rounded-0 rounded-end" type="submit" id="button-addon2"><i class="bi bi-search"></i></button>
+                </form>
             </div>
             @foreach ($artikel as $a)
             <a href="/artikel/isi/{{$a->artikelid}}" >

@@ -20,4 +20,22 @@ class ListController extends Controller
 
         return view('modul.list-modul', ['modul' => $modul]);
     }
+
+    // by arif
+    public function pencarian(Request $request){
+
+        $cari = $request->cari;
+
+        $hasil = $this->cariModul($cari);
+
+        return view('modul.list-modul', ['modul' => $hasil]);
+    }
+
+    public function cariModul($cari){
+        $hasil = DB::table('modul')
+		->where('title','like',"%".$cari."%")
+        ->orWhere('deskripsi','like',"%".$cari."%")
+		->paginate(6);
+        return $hasil;
+    }
 }

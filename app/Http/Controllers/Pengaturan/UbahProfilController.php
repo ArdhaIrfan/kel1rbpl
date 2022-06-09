@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 
 class UbahProfilController extends Controller
 {
-    public function display() {
+    public function tampilkan() {
         $userid = Auth::id();
         $profil = DB::table('users')-> where('id', $userid) -> first();
         return view('Pengaturan.ubah-profil', ['profil' => $profil]);

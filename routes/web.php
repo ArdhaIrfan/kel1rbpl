@@ -30,6 +30,7 @@ Route::get('/modul/video/{modulid}', 'Modul\VideoController@tampilkan')->middlew
 Route::get('/landing', 'LandingPageController@tampilkan');
 
 Route::get('/modul/riwayat/hapus/{modulid}', 'Modul\RiwayatController@hapusRiwayat')->middleware('auth');
+Route::get('/modul/cari','Modul\ListController@pencarian');
 
 Route::get('/modul/upload', 'Modul\UploadController@tampilkan')->middleware('auth');
 Route::post('/modul/upload/proses', 'Modul\UploadController@inputModul')->middleware('auth');
@@ -46,18 +47,22 @@ Route::get('/artikel/upload', 'Artikel\UploadController@tampilkan')->middleware(
 Route::post('/artikel/upload/proses', 'Artikel\UploadController@simpanArtikel')->middleware('auth');
 Route::get('/artikel/upload/hapus/{id}', 'Artikel\UploadController@hapusArtikel')->middleware('auth');
 
-Route::get('/profil/langganan/temp', 'Pengaturan\LanggananController@tampilkantemp');
+Route::get('/profil/ganti-password', 'Auth\GantiPasswordController@display')->middleware('auth');
+Route::post('/profil/ganti-password/save', 'Auth\GantiPasswordController@save')->middleware('auth');
 
 // by Ghif
 Route::get('/artikel/list', 'Artikel\ListController@tampilkan');
 Route::get('/artikel/isi/{id}', 'Artikel\IsiController@tampilkan');
+Route::get('/artikel/cari','Artikel\ListController@pencarian');
 
 
 // by Bashara
-Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@display');
-Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan');
-Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan');
-Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpanDataDiri')->middleware('auth');
+Route::get('/profil/ubah', 'Pengaturan\UbahProfilController@tampilkan')->middleware('auth');
+Route::get('/profil/langganan', 'Pengaturan\LanggananController@tampilkan')->middleware('auth');
+Route::get('/profil/setting', 'Pengaturan\SettingController@tampilkan')->middleware('auth');
+Route::post('/profil/ubah/simpan', 'Pengaturan\UbahProfilController@simpan')->middleware('auth');
+Route::get('/logout', 'Pengaturan\SettingController@logout')->middleware('auth');
+Route::get('/delete', 'Pengaturan\SettingController@deleteAccount')->middleware('auth');
 
 // Route::get('/artikel/riwayat', 'Modul\RiwayatController@tampilkan');
 

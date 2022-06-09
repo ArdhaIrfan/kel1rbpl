@@ -25,7 +25,7 @@ class VideoController extends Controller
         ->where('modulid', '=', $modulid)
         ->get();
 
-        $video_temp = DB::table('videopembelajaran')->where('modulid', '=', $modulid)->where('videoid', '=', $videoid);
+        $video_temp = $this->ambilVideo($modulid, $videoid);
 
         if($video_temp->exists()){
             $isVideoExist = 1;
@@ -35,8 +35,15 @@ class VideoController extends Controller
 
         $video = $video_temp->first();
 
+        $artikel = DB::table('artikel')->limit(6)->get();
 
-        return view('modul.video-modul', ['modul'=>$modul, 'video'=>$video, 'isVideoExist'=>$isVideoExist, 'listvideo'=>$listvideo]);
+
+        return view('modul.video-modul', ['modul'=>$modul, 'video'=>$video, 'isVideoExist'=>$isVideoExist, 'listvideo'=>$listvideo, 'artikel'=>$artikel]);
+    }
+
+    public function ambilVideo($modulid, $videoid){
+        $hasil = DB::table('videopembelajaran')->where('modulid', '=', $modulid)->where('videoid', '=', $videoid);
+        return $hasil;
     }
 
     public function simpanLaporan(Request $request){

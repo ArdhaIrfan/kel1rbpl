@@ -72,9 +72,11 @@
                     <a href="#" class="col-md-4 col-lg-3 text-light standard-link mx-3">Live Session</a>
                 </div>
                 <div class="input-group mb-3 search">
-                    <input type="text" class="form-control" placeholder="Search Community"
-                        aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text col-md-3" id="basic-addon2"><i class="bi bi-search"></i></span>
+                    <form action="/modul/cari" method="GET" class="d-flex" style="width: 100%;">
+                            <input type="text" name="cari" class="form-control rounded-0 rounded-start" placeholder="Search Community"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <button class="btn text-bg-secondary btn-outline-secondary rounded-0 rounded-end" type="submit" id="button-addon2"><i class="bi bi-search"></i></button>
+                    </form>
                 </div>
             </div>
             <div>
