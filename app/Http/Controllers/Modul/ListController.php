@@ -26,11 +26,16 @@ class ListController extends Controller
 
         $cari = $request->cari;
 
+        $hasil = $this->cariModul($cari);
+
+        return view('modul.list-modul', ['modul' => $hasil]);
+    }
+
+    public function cariModul($cari){
         $hasil = DB::table('modul')
 		->where('title','like',"%".$cari."%")
         ->orWhere('deskripsi','like',"%".$cari."%")
 		->paginate(6);
-
-        return view('modul.list-modul', ['modul' => $hasil]);
+        return $hasil;
     }
 }
