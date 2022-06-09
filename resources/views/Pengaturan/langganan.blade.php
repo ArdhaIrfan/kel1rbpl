@@ -393,7 +393,7 @@ body {
 
   <div>
     <h3>Riwayat Transaksi</h3>
-    <div class="row">
+    <div class="row border-bottom">
         <div class="col">
             Paket Berlangganan Tahunan (
     @foreach ($riwayat as $r)
